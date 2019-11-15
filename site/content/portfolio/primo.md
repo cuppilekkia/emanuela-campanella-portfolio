@@ -1,14 +1,15 @@
 ---
 title: Test portfolio
 date: 2019-11-14T15:04:10.000Z
+categories:
+  - Design
+  - UX
 intro: some intro text
+mainimage: /img/about-sustainable-farming.jpg
 images:
   - /img/about-direct-sourcing.jpg
   - /img/about-jumbotron.jpg
   - /img/about-reinvest-profits.jpg
-categories:
-  - Design
-  - UX
 ---
 
 This [week](/wdwdw) we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts\*.
