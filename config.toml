@@ -1,2 +1,8 @@
 languageCode = "en-us"
+baseURL = "https://yoursite.example.com/"
 title = "My New Netlify Victor Hugo Site"
+footnoteReturnLinkContents = "↩"
+
+[params]
+  AuthorName = "Jon Doe"
+  Subtitle = "Hugo is Absurdly Fast!"
