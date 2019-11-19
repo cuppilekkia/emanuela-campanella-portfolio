@@ -1,0 +1,10 @@
+@import "../../../node_modules/flickity/css/flickity.css";
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}

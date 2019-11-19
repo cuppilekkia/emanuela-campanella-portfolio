@@ -34,8 +34,13 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Head Image", name: "mainimage", widget: "image" }
-      - { label: "Images", name: "images", widget: "list", field: {label: Image, name: image, widget: image}}
-  - name: "categorie" 
+      - {
+          label: "Images",
+          name: "images",
+          widget: "list",
+          field: { label: Image, name: image, widget: image },
+        }
+  - name: "categorie"
     label: "Categorie"
     folder: "site/content/categorie"
     create: true
@@ -52,7 +57,16 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Subtitle, name: subtitle, widget: string }
-          - { label: Image, name: image, widget: image }
+          - {
+              label: "Slides",
+              name: "slides",
+              widget: "list",
+              fields: 
+              [
+                { label: Image, name: src, widget: image },
+                { label: Caption, name: caption, widget: string },
+              ],
+            }
           - {
               label: "Blurb",
               name: blurb,

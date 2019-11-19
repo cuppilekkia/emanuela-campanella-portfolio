@@ -2,6 +2,10 @@
 
   <title>{{ .Title }} | {{ $.Site.Title }}</title>
 
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+  </style>
+
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">

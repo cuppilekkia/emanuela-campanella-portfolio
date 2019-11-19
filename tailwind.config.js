@@ -10,7 +10,7 @@ module.exports = {
       xl: "1280px",
     },
     fontFamily: {
-      display: ["Gilroy", "sans-serif"],
+      display: ["Playfair Display", "serif"],
       body: ["Graphik", "sans-serif"],
     },
     borderWidth: {
