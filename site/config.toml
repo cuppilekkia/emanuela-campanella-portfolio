@@ -1,11 +1,10 @@
 baseurl = "/"
-languageCode = "it"
-languageLang = "it"
+languageCode = "en-gb"
+footnoteReturnLinkContents = "↩"
 
 title = "Emanuela Campanella Fashion photographer"
 
 disableKinds = ["RSS"]
-DefaultContentLanguage = "it"
 
 [params]
   AuthorName = "Emanuela Campanella"
