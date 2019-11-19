@@ -1,9 +1,7 @@
 ---
 title: Test portfolio
 date: 2019-11-14T15:04:10.000Z
-categories:
-  - Design
-  - UX
+categories: fashion
 intro: some intro text
 mainimage: /img/about-sustainable-farming.jpg
 images:
