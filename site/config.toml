@@ -4,7 +4,7 @@ footnoteReturnLinkContents = "↩"
 
 title = "Emanuela Campanella Fashion photographer"
 
-disableKinds = ["RSS"]
+disableKinds = ["RSS", "taxonomyTerm"]
 
 [params]
   AuthorName = "Emanuela Campanella"
@@ -12,3 +12,4 @@ disableKinds = ["RSS"]
   
 [permalinks]
   categories = "/:title/"
+  portfolio = "/:slug/"

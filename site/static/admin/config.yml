@@ -23,7 +23,14 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Categories", name: "categories", widget: "select", multiple: true, options: ["Design", "UX", "Dev"], default: ["Design"]}
+      #- { label: "Categories", name: "categories", widget: "select", multiple: true, options: ["Design", "UX", "Dev"], default: ["Design"]}
+      - label: "Categoria"
+        name: "categories"
+        widget: "relation"
+        collection: "categorie"
+        searchFields: ["title", "intro"]
+        valueField: "title"
+        displayFields: ["title"]
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Head Image", name: "mainimage", widget: "image" }
