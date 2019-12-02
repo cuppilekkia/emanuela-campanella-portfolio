@@ -38,7 +38,11 @@ collections: # A list of collections the CMS should be able to edit
           label: "Images",
           name: "images",
           widget: "list",
-          field: { label: Image, name: image, widget: image },
+          fields: 
+          [
+            { label: Image, name: image, widget: image },
+            { label: Caption, name: caption, widget: string },
+          ],
         }
   - name: "categorie"
     label: "Categorie"
@@ -62,10 +66,10 @@ collections: # A list of collections the CMS should be able to edit
               name: "slides",
               widget: "list",
               fields: 
-              [
-                { label: Image, name: src, widget: image },
-                { label: Caption, name: caption, widget: string },
-              ],
+                [
+                  { label: Image, name: src, widget: image },
+                  { label: Caption, name: caption, widget: string },
+                ],
             }
           - {
               label: "Blurb",
