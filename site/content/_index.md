@@ -6,6 +6,8 @@ slides:
     src: /img/about-shade-grown.jpg
   - caption: caption caffè
     src: /img/blog-index.jpg
+  - caption: caption sourcing
+    src: /img/about-direct-sourcing.jpg
 blurb:
   heading: Why Kaldi?
   text: >-

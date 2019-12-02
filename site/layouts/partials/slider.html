@@ -1,12 +1,12 @@
-<div class="js-flickity carousel">
+<div class="js-flickity carousel mb-16">
 
-  {{ range .images }}
-    <div class="carousel-cell">
+    {{ range .images }}
+    <div class="carousel-cell lg:h-auto">
         <img src="{{ .src }}" alt="{{ .caption }}" srcset="">
         <!-- <div class="">
           <a href="/post" class="">{{ .caption }}</a>
         </div> -->
     </div>
-  {{ end }}
+    {{ end }}
 
 </div>
