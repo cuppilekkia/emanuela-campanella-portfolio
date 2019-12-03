@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 @import '../../../node_modules/flickity/css/flickity.css';
 .carousel-cell {
   width: 100%;
@@ -42,3 +43,5 @@
   margin: 0;
   border-radius: 0;
 }
+
+/* purgecss end ignore */
