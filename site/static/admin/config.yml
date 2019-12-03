@@ -50,6 +50,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
   - name: "pages"

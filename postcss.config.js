@@ -14,7 +14,7 @@ module.exports = {
             "./site/layouts/**/*.html"
           ],
           whitelistPatterns: [
-            /^flickity./gi,
+            /flickity/gi,
           ],
           defaultExtractor: (content) =>
             content.match(/[\w-/:]*[\w-/:]/g) || [],
