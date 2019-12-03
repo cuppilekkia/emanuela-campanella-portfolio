@@ -1,0 +1,19 @@
+<div class="">
+	<div class="">
+
+		<h2 class="">Latest stories</h2>
+
+		<div class="">
+			{{ range first 4 (where .Data.Pages "Type" "post") }}
+				<div class="">
+					{{ .Render "li" }}
+				</div>
+			{{ end }}
+		</div>
+
+		<div class="">
+			<a href="/post" class="">Read more</a>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="">
+  <div class="">
+    <h2 class="">{{.intro.heading}}</h2>
+    <p class="">{{.intro.text}}</p>
+
+    <div class="">
+      {{ range .products }}
+      <div class="">
+        <img src="{{.image}}" alt="" class="" style="width: 240px">
+        <p>{{.text}}</p>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="">
+      <a href="/products" class="">See all products</a>
+    </div>
+  </div>
+</div>

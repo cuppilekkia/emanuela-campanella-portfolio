@@ -1,0 +1,53 @@
+<footer class="">
+
+	<div class="">
+
+		<div class="">
+
+			<img src="/img/logo.svg" alt="Kaldi logo" class="">
+			<p class="">Newsletter subscribe</p>
+			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
+
+			{{ partial "newsletter-form" . }}
+
+		</div>
+
+		<div class="">
+
+			<div>
+				<h3 class="">Kaldi</h3>
+				<ul class="">
+					<li><a href="/" class="">Home</a></li>
+					<li><a href="/products" class="">Our products</a></li>
+					<li><a href="/values" class="">About</a></li>
+					<li><a href="/post" class="">Blog</a></li>
+					<li><a href="/contact" class="">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="">Find out more</h3>
+				<ul class="">
+					<li><a href="/post/jamaica-blue/" class="">Latest offers</a></li>
+					<li><a href="/contact" class="">Schedule and appointment</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="">Social media</h3>
+				<ul class="">
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+</footer>
+
+{{ partial "svg" . }}
+
+<!-- <script src="/app.js"></script> -->

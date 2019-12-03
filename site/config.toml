@@ -1,0 +1,15 @@
+baseurl = "/"
+languageCode = "en-gb"
+footnoteReturnLinkContents = "↩"
+
+title = "Emanuela Campanella Fashion photographer"
+
+disableKinds = ["RSS", "taxonomyTerm"]
+
+[params]
+  AuthorName = "Emanuela Campanella"
+  Subtitle = "Fashion and Editorial photographer"
+  
+[permalinks]
+  categories = "/:title/"
+  portfolio = "/:slug/"
