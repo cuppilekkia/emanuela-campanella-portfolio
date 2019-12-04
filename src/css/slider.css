@@ -7,6 +7,16 @@
   border-radius: 5px;
 }
 
+.carousel-cell-image {
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
 .carousel-cell img {
   width: 100%;
 }
