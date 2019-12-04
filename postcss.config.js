@@ -15,6 +15,7 @@ module.exports = {
           ],
           whitelistPatterns: [
             /flickity/gi,
+            /carousel/gi,
           ],
           defaultExtractor: (content) =>
             content.match(/[\w-/:]*[\w-/:]/g) || [],
