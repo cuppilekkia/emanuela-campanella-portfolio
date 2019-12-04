@@ -9,6 +9,9 @@ disableKinds = ["RSS", "taxonomyTerm"]
 [params]
   AuthorName = "Emanuela Campanella"
   Subtitle = "Fashion and Editorial photographer"
+
+[params.social]
+  instagram = "@manuela"
   
 [permalinks]
   categories = "/:title/"
