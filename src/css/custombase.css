@@ -22,3 +22,13 @@ h2 {
 h3 {
   @apply text-2xl;
 }
+
+.transition-fast {
+  transition: .1s ease-in-out;
+}
+.transition-normal {
+  transition: .3s ease-in-out;
+}
+.transition-slow {
+  transition: .5s ease-in-out;
+}

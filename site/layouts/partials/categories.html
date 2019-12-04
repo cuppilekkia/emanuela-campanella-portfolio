@@ -1,0 +1,5 @@
+<div class="flex flex-wrap mb-4 -mx-2 overflow-hidden">
+	{{ range (where .Site.RegularPages "Type" "categorie") }}
+		{{ partial "home-category" . }}
+	{{ end }}
+</div>
