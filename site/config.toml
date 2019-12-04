@@ -1,14 +1,20 @@
 baseurl = "/"
 languageCode = "en-gb"
 footnoteReturnLinkContents = "↩"
+enableRobotsTXT = "true"
+canonifyURLs = "true"
 
 title = "Emanuela Campanella Fashion photographer"
 
 disableKinds = ["RSS", "taxonomyTerm"]
 
 [params]
-  AuthorName = "Emanuela Campanella"
-  Subtitle = "Fashion and Editorial photographer"
+  authorName = "Emanuela Campanella"
+  subtitle = "Fashion and Editorial photographer"
+  shorttitle = ""
+  description = ""
+  siteDescription = ""
+  images = ["site-feature-image.jpg"]
 
 [params.social]
   instagram = "@manuela"
