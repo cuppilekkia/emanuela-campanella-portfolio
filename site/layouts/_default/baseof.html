@@ -2,8 +2,10 @@
 <html lang="{{ $.Site.Language.Lang }}" class="text-black antialiased leading-tight">
 {{ partial "head" . }}
 
-<body class="px-2 sm:px-6 md:px-12 font-body">
+<body class="font-body">
+  
   {{ block "header" . }}{{ partial "nav" . }}{{end}}
+
   <main class="pt-4 sm:pt-6">
     {{ block "main" . }}{{ end }}
   </main>
@@ -11,6 +13,7 @@
   {{ block "footer" . }}{{ partial "footer" . }}{{end}} {{ $script := .Site.Data.webpack.main }} {{ with $script.js }}
   <script src="{{ relURL . }}"></script>
   {{ end }}
+  
 </body>
 
 </html>
