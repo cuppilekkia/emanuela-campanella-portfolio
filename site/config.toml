@@ -17,7 +17,7 @@ disableKinds = ["RSS", "taxonomyTerm"]
   images = ["site-feature-image.jpg"]
 
 [params.social]
-  instagram = "@manuela"
+  instagram = "manuela"
   
 [permalinks]
   categories = "/:title/"
