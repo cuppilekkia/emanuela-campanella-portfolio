@@ -1,5 +1,5 @@
 ---
-title: Great coffee with a conscience
+title: Emanuela Campanella Advertising photographer
 subtitle: Support sustainable farming while enjoying a cup
 slides:
   - caption: caption uva
