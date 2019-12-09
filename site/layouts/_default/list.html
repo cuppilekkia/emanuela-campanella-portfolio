@@ -1,10 +1,10 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "I am _default list") }}
 
 <div class="">
   <ul class="">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
+      {{ range (.Paginator 4).Pages.ByDate.Reverse }}
           <div class="">
             {{ .Render "li"}}
           </div>
