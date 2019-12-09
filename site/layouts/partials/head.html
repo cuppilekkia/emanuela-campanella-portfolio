@@ -1,14 +1,5 @@
 <head>
-	{{ partial "seo_schema" . }}
-	{{ template "_internal/schema.html" }}
-
 	<title>{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}</title>
-	<style>@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');</style>
-
-	{{ $stylesheet := .Site.Data.webpack.main }}
-	{{ with $stylesheet.css }}
-	<link href="{{ relURL . }}" rel="stylesheet">
-	{{ end }}
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -30,6 +21,14 @@
 	<meta name="robots" content="index, follow" />
 	{{ end }}
 
+	<!-- Styles -->
+	<style>@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');</style>
+	{{ $stylesheet := .Site.Data.webpack.main }}
+	{{ with $stylesheet.css }}
+	<link href="{{ relURL . }}" rel="stylesheet">
+	{{ end }}
+	<link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
+
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
@@ -38,8 +37,24 @@
 	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
 	<meta name="theme-color" content="#fff">
 
-	{{ template "_internal/opengraph.html" . }}
+	<!-- OG data -->
+	{{ partial "seo_schema" . }}
 
+	<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+	<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+	<meta property="og:title" content="{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}">
+	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+	<meta property="og:url" content="{{ .Permalink }}" />
+	<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+	<meta name="twitter:title" content="{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}" />
+	<meta name="twitter:site" content="{{ .Site.Params.author }}" />
+	<meta name="twitter:creator" content="{{ .Site.Params.author }}" />
+
+	<!-- Scripts -->
 	{{ if .IsHome }}
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	{{ end }}

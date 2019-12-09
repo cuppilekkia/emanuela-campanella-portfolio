@@ -33,15 +33,15 @@
     <ul class="text-sm md:flex-grow">
       <li class="block mt-4 md:inline-block md:mt-0 mr-4">
         {{ $instagram := (printf "https://instagram.com/%s" .Site.Params.social.instagram) }}
-        {{ partial "social-icon" (dict "link" $instagram "svg" "icons-instagram") }}
+        {{ partial "social-icon" (dict "link" $instagram "social" "instagram") }}
       </li>
       <li class="block mt-4 md:inline-block md:mt-0 mr-4">
         {{ $facebook := (printf "https://facebook.com/%s" .Site.Params.social.facebook) }}
-        {{ partial "social-icon" (dict "link" $facebook "svg" "icons-facebook") }}
+        {{ partial "social-icon" (dict "link" $facebook "social" "facebook") }}
       </li>
       <li class="block mt-4 md:inline-block md:mt-0">
           {{ $linkedin := (printf "https://linkedin.com/in/%s" .Site.Params.social.linkedin) }}
-          {{ partial "social-icon" (dict "link" $linkedin "svg" "icons-linkedin") }}
+          {{ partial "social-icon" (dict "link" $linkedin "social" "linkedin") }}
       </li>
     </ul>
   </div>

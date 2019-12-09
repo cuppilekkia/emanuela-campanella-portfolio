@@ -1,24 +1,61 @@
-<script type="application/ld+json">
-  {
-      "@context" : "http://schema.org",
-      "@type" : "BlogPosting",
-      "mainEntityOfPage": {
-           "@type": "WebPage",
-           "@id": "{{ .Site.BaseURL }}"
-      },
-      "articleSection" : "{{ .Section }}",
-      "name" : "{{ .Title }}",
-      "headline" : "{{ .Title }}",
-      "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
-      "inLanguage" : "{{ .Site.LanguageCode }}",
-      "author" : "{{ with .Site.Params.author }}{{ . }}{{ end }}",
-      "creator" : "{{ with .Site.Params.author }}{{ . }}{{ end }}",
-      "publisher": "{{ with .Site.Params.author }}{{ . }}{{ end }}",
-      "accountablePerson" : "{{ with .Site.Params.author }}{{ . }}{{ end }}",
-      "copyrightHolder" : "{{ with .Site.Params.author }}{{ . }}{{ end }}",
-      "copyrightYear" : "{{ .Date.Format "2006" }}",
-      "datePublished": "{{ .Date }}",
-      "dateModified" : "{{ .Date }}",
-      "url" : "{{ .Permalink }}"
+{{ if .IsHome }}
+  <script type="application/ld+json">
+  { 
+    "@context": "http://schema.org", 
+    "@type": "WebSite", 
+    "url": {{ .Permalink }}, 
+    "name": {{ .Site.Title }},
+    "author": {
+      "@type": "Person",
+      "name": {{ .Site.Params.author }}
+    },
+    "description": {{ .Site.Params.description }}
   }
   </script>
+{{ end }}
+
+{{ if .IsPage }}
+    <script type="application/ld+json">
+    {{if eq .Section "post"}}
+    { 
+        "@context": "http://schema.org", 
+        "@type": "BlogPosting",
+        "headline": {{ .Title }},
+        "genre": {{ range .Params.categories }}{{ . }}{{ end }},  
+        "url": {{ .Permalink }},
+        "datePublished": {{ time .Date }},
+        "description": {{ .Summary | plainify | safeHTML }},
+        "author": {
+            "@type": "Person",
+            "name": {{ .Site.Params.author }}
+        }
+      }
+    {{ else if eq .Section "portfolio"}}
+    { 
+        "@context": "http://schema.org", 
+        "@type": "CreativeWork",
+        "headline": {{ .Title }},
+        "genre": {{ .Params.categories }},  
+        "url": {{ .Permalink }},
+        "dateCreated": {{ time .Date }},
+        "description": {{ .Summary | plainify | safeHTML }},
+        "author": {
+            "@type": "Person",
+            "name": {{ .Site.Params.author }}
+        }
+      }
+    {{ else }}
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": {{ .Permalink }}, 
+      "name": {{ .Title }},
+        "author": {
+          "@type": "Person",
+          "name": {{ .Site.Params.author }}
+        },
+      "description": {{ .Summary | plainify | safeHTML }}
+    }
+    {{ end }}
+    </script>
+{{ end }}
