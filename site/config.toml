@@ -11,7 +11,7 @@ disableKinds = ["RSS", "taxonomyTerm"]
 [params]
   author = "Emanuela Campanella"
   subtitle = "Fashion and Editorial photographer"
-  shorttitle = "titolo corto"
+  shorttitle = "Emanuela Campanella Photographer"
   description = "descrizione"
   siteDescription = "descrizione sito"
   images = ["site-feature-image.jpg"]

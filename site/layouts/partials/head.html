@@ -2,7 +2,7 @@
 	{{ partial "seo_schema" . }}
 	{{ template "_internal/schema.html" }}
 
-	<title>{{ .Title | default $.Site.Title }}{{ if not .IsHome }} - {{ $.Site.Params.shorttitle }}{{ end }}</title>
+	<title>{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}</title>
 	<style>@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');</style>
 
 	{{ $stylesheet := .Site.Data.webpack.main }}
