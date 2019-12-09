@@ -3,9 +3,7 @@
 	{{ template "_internal/schema.html" }}
 
 	<title>{{ .Title | default $.Site.Title }}{{ if not .IsHome }} - {{ $.Site.Params.shorttitle }}{{ end }}</title>
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-	</style>
+	<style>@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');</style>
 
 	{{ $stylesheet := .Site.Data.webpack.main }}
 	{{ with $stylesheet.css }}
@@ -18,10 +16,15 @@
 	<base
 		href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
+	{{ if ne "production" (getenv "CONTEXT") }}
+	<meta name="X-HUGO-PAGE-KIND" content="{{.Kind}}" />
+	<meta name="X-HUGO-PAGE-TYPE" content="{{.Type}}" />
+	{{ end }}
+
 	<meta name="description"
 		content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 
-	{{ if and (eq .Kind "taxonomy") (eq .Type "categories")}}
+	{{ if and (eq .Kind "taxonomy") (eq .Type "categorie")}}
 	<meta name="robots" content="noindex, follow" />
 	{{ else }}
 	<meta name="robots" content="index, follow" />

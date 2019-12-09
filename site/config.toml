@@ -9,15 +9,17 @@ title = "Emanuela Campanella Fashion photographer"
 disableKinds = ["RSS", "taxonomyTerm"]
 
 [params]
-  authorName = "Emanuela Campanella"
+  author = "Emanuela Campanella"
   subtitle = "Fashion and Editorial photographer"
-  shorttitle = ""
-  description = ""
-  siteDescription = ""
+  shorttitle = "titolo corto"
+  description = "descrizione"
+  siteDescription = "descrizione sito"
   images = ["site-feature-image.jpg"]
 
 [params.social]
-  instagram = "manuela"
+  instagram = "emanuelacampanella_photography"
+  facebook = "emanuelacampanellaphotography"
+  linkedin = "emanuela-campanella"
   
 [permalinks]
   categories = "/:title/"

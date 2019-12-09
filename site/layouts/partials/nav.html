@@ -25,8 +25,24 @@
         Contact
       </a>
     </div>
-    <div>
+    <!-- <div>
       <a href="#" class="inline-block text-sm px-4 py-2 leading-none border border-black rounded mt-4 md:mt-0">Download</a>
-    </div>
+    </div> -->
+  </div>
+  <div class="w-full block md:flex md:items-center md:w-auto js-menu">
+    <ul class="text-sm md:flex-grow">
+      <li class="block mt-4 md:inline-block md:mt-0 mr-4">
+        {{ $instagram := (printf "https://instagram.com/%s" .Site.Params.social.instagram) }}
+        {{ partial "social-icon" (dict "link" $instagram "svg" "icons-instagram") }}
+      </li>
+      <li class="block mt-4 md:inline-block md:mt-0 mr-4">
+        {{ $facebook := (printf "https://facebook.com/%s" .Site.Params.social.facebook) }}
+        {{ partial "social-icon" (dict "link" $facebook "svg" "icons-facebook") }}
+      </li>
+      <li class="block mt-4 md:inline-block md:mt-0">
+          {{ $linkedin := (printf "https://linkedin.com/in/%s" .Site.Params.social.linkedin) }}
+          {{ partial "social-icon" (dict "link" $linkedin "svg" "icons-linkedin") }}
+      </li>
+    </ul>
   </div>
 </nav>

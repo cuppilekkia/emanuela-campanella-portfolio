@@ -1,6 +1,6 @@
 <div class="w-full bg-gray-100 base-container py-24 text-center">
   <h2 class="mb-8">Instagram</h2>
-  <a href="https://instagram.com/{{ .Site.Params.social.instagram }}" target="_blank" class="mb-4">@{{ .Site.Params.social.instagram }}</p>
+  <a href="https://instagram.com/{{ .Site.Params.social.instagram }}" target="_blank" class="mb-4">@{{ .Site.Params.social.instagram }}</a>
 
-  {{ partial "image-grid" . }}
+  {{ partial "image-grid" (dict "images" .Site.Data.instagram) }}
 </div>
