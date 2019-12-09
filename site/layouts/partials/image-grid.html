@@ -1,17 +1,12 @@
-<div class="">
-
-	<div class="">
-		<div class="">
-			<img src="{{ .image1.image }}" alt="{{ .image1.alt }}">
+<div class="flex justify-center mt-4">
+	<div class="flex flex-wrap max-w-5xl -mx-2">
+		
+		{{ range .images }}
+		<div class="w-1/3 px-2 mb-4">
+			<a href="{{ .link }}" target="_blank">
+				<img src="{{ .src }}" alt="{{ .title }}" class="hover:opacity-75 transition-normal">
+			</a>
 		</div>
-
-		<div class="">
-			<img src="{{ .image2.image }}" alt="{{ .image2.alt }}">
-		</div>
-
-		<div class="">
-			<img src="{{ .image3.image }}" alt="{{ .image3.alt }}">
-		</div>
+		{{ end }}
 	</div>
-
 </div>

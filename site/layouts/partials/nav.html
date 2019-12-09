@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between flex-wrap py-6">
+<nav class="flex items-center justify-between flex-wrap py-6 base-container">
   <div class="flex items-center flex-shrink-0 mr-6">
     <a href="/" class="font-semibold text-xl tracking-tight">Emanuela Campanella</a>
   </div>
@@ -12,21 +12,49 @@
   </div>
   <div class="w-full block flex-grow md:flex md:items-center md:w-auto js-menu">
     <div class="text-sm md:flex-grow">
-      <a href="/products" class="block mt-4 md:inline-block md:mt-0 mr-4">
-        Products
+      <a href="/" class="block mt-4 md:inline-block md:mt-0 mr-4">
+        Home
       </a>
-      <a href="/values" class="block mt-4 md:inline-block md:mt-0 mr-4">
-        Values
-      </a>
-      <a href="/blog" class="block mt-4 md:inline-block md:mt-0 mr-4">
+
+      <div class="group block mt-4 md:inline-block md:mt-0 mr-4">
+        <a href="#" class="">
+          Portfolio
+        </a>
+        <div class="items-center absolute pt-2 invisible group-hover:visible w-auto z-10">
+          {{ range (where .Site.RegularPages "Type" "categorie") }}
+            <a href="/{{ .Params.slug }}" class="px-4 py-2 block bg-gray-100 hover:bg-gray-200">{{ title .Params.title }}</a>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- <a href="/blog" class="block mt-4 md:inline-block md:mt-0 mr-4">
         Blog
+      </a> -->
+      <a href="/about" class="block mt-4 md:inline-block md:mt-0 mr-4">
+        About
       </a>
       <a href="/contact" class="block mt-4 md:inline-block md:mt-0">
         Contact
       </a>
     </div>
-    <div>
+    <!-- <div>
       <a href="#" class="inline-block text-sm px-4 py-2 leading-none border border-black rounded mt-4 md:mt-0">Download</a>
-    </div>
+    </div> -->
+  </div>
+  <div class="w-full block md:flex md:items-center md:w-auto js-menu">
+    <ul class="text-sm md:flex-grow">
+      <li class="block mt-4 md:inline-block md:mt-0 mr-4">
+        {{ $instagram := (printf "https://instagram.com/%s" .Site.Params.social.instagram) }}
+        {{ partial "social-icon" (dict "link" $instagram "social" "instagram") }}
+      </li>
+      <li class="block mt-4 md:inline-block md:mt-0 mr-4">
+        {{ $facebook := (printf "https://facebook.com/%s" .Site.Params.social.facebook) }}
+        {{ partial "social-icon" (dict "link" $facebook "social" "facebook") }}
+      </li>
+      <li class="block mt-4 md:inline-block md:mt-0">
+        {{ $linkedin := (printf "https://linkedin.com/in/%s" .Site.Params.social.linkedin) }}
+        {{ partial "social-icon" (dict "link" $linkedin "social" "linkedin") }}
+      </li>
+    </ul>
   </div>
 </nav>

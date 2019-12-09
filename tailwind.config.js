@@ -40,6 +40,9 @@ module.exports = {
         "96": "24rem",
         "128": "32rem"
       }
-    }
-  }
+    },
+  },
+  variants: {
+    visibility: ["responsive", "hover", "focus", "group-hover"],
+  },
 };

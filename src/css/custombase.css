@@ -1,7 +1,4 @@
-a:hover {
-  @apply text-gold;
-}
-
+/* Basic Heading sizes */
 h1,
 h2,
 h3,
@@ -23,6 +20,24 @@ h3 {
   @apply text-2xl;
 }
 
+/* Custom container */
+.base-container {
+  @apply px-2;
+}
+
+@screen sm {
+  .base-container {
+    @apply px-6;
+  }
+}
+
+@screen md {
+  .base-container {
+    @apply px-12;
+  }
+}
+
+/* Custom Transitions */
 .transition-fast {
   transition: .1s ease-in-out;
 }
@@ -31,4 +46,12 @@ h3 {
 }
 .transition-slow {
   transition: .5s ease-in-out;
+}
+
+a {
+  @apply transition-normal;
+}
+
+a:hover {
+  @apply text-gold;
 }

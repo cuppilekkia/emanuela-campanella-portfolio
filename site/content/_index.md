@@ -1,5 +1,5 @@
 ---
-title: Great coffee with a conscience
+title: Emanuela Campanella Advertising photographer
 subtitle: Support sustainable farming while enjoying a cup
 slides:
   - caption: caption uva
@@ -9,11 +9,12 @@ slides:
   - caption: caption sourcing
     src: /img/about-direct-sourcing.jpg
 blurb:
-  heading: Why Kaldi?
+  heading: Some nice intro text
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Anim amet enim deserunt aute laborum anim non Lorem. Aliquip Lorem aliqua esse laboris nostrud fugiat duis culpa laborum duis pariatur cillum quis adipisicing. Incididunt ex nostrud consequat in elit exercitation do commodo. Mollit occaecat ut ad ea qui minim enim veniam. Dolore irure dolore cupidatat nostrud est aliquip elit.
+
+    Labore mollit in esse aute ea qui irure occaecat amet est ad. Tempor enim quis duis eu. Veniam incididunt laboris magna incididunt aute aliqua elit labore.
+
+    Ex reprehenderit irure voluptate dolor. Cillum quis eiusmod laboris sit tempor amet magna nostrud laborum. Exercitation voluptate sunt aute laboris occaecat laborum do qui Lorem qui commodo eiusmod.
 ---
 

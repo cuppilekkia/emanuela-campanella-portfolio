@@ -1,8 +1,8 @@
-<div class="js-flickity carousel mb-16">
+<div class="js-flickity carousel mb-16 base-container">
 
   {{ range .images }}
   <figure class="carousel-cell lg:h-auto">
-    <img src="{{ .src }}" alt="{{ .caption }}" srcset="">
+    <img data-flickity-lazyload="{{ .src }}" alt="{{ .caption }}" srcset="">
     <!-- <div class="">
           <a href="/post" class="">{{ .caption }}</a>
         </div> -->
