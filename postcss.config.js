@@ -14,10 +14,12 @@ module.exports = {
             "./site/layouts/**/*.html"
           ],
           whitelistPatterns: [
-            /.*flickity|carousel.*/gi,
+            /.*(?:flickity|carousel).*/gi,
+            /hidden/gi,
           ],
           whitelistPatternsChildren: [
-            /.*flickity|carousel.*/gi,
+            /.*(?:flickity|carousel).*/gi,
+            /hidden/gi,
           ],
           defaultExtractor: (content) =>
             content.match(/[\w-/:]*[\w-/:]/g) || [],
