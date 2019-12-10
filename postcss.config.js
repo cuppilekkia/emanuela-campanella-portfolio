@@ -15,6 +15,7 @@ module.exports = {
           ],
           whitelistPatterns: [
             /.*(?:flickity|carousel).*/gi,
+            /(dot|next|previous)/gi,
             /hidden/gi,
           ],
           whitelistPatternsChildren: [
