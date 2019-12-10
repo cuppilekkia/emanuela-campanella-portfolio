@@ -2,6 +2,7 @@
 
 @import 'tailwindcss/base';
 @import 'custombase';
+@import 'slider';
 @import 'tailwindcss/components';
 
 /* purgecss end ignore */

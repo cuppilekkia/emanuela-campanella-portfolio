@@ -7,7 +7,7 @@ module.exports = {
     "postcss-custom-media": {},
     "tailwindcss": {},
     autoprefixer: {},
-    ...(process.env.NODE_ENV === "production"
+    ...(process.env.NODE_ENV === "production" || true
       ? {
         "@fullhuman/postcss-purgecss": {
           content: [
