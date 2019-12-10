@@ -35,6 +35,14 @@
   height: 30px;
 }
 
+.flickity-prev-next-button.previous{
+  left:60px;
+}
+
+.flickity-prev-next-button.next{
+  right:60px;
+}
+
 /* icon color */
 .flickity-button-icon {
   fill: white;
