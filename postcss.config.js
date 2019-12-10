@@ -7,20 +7,22 @@ module.exports = {
     "postcss-custom-media": {},
     "tailwindcss": {},
     autoprefixer: {},
-    ...(process.env.NODE_ENV === "production" || true
+    ...(process.env.NODE_ENV === "production"
       ? {
         "@fullhuman/postcss-purgecss": {
           content: [
-            "./site/layouts/**/*.html"
+            "./site/layouts/**/*.html",
+            "./src/js/blocks/**/*.js"
           ],
           whitelistPatterns: [
-            /.*(?:flickity|carousel).*/gi,
-            /(dot|next|previous)/gi,
-            /hidden/gi,
+            /.*(?:flickity|carousel).*/,
+            /(dot|next|previous)/,
+            /hidden/,
           ],
           whitelistPatternsChildren: [
-            /.*(?:flickity|carousel).*/gi,
-            /hidden/gi,
+            /.*(?:flickity|carousel).*/,
+            /(dot|next|previous)/,
+            /hidden/,
           ],
           defaultExtractor: (content) =>
             content.match(/[\w-/:]*[\w-/:]/g) || [],
