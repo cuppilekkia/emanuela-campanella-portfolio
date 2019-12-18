@@ -1,15 +1,11 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "I am _default list") }}
-
-<div class="">
-  <ul class="">
-      {{ range (.Paginator 4).Pages.ByDate.Reverse }}
-          <div class="">
-            {{ .Render "li"}}
-          </div>
-      {{ end }}
-  </ul>
+<div class="flex flex-wrap mb-4 -mx-2 overflow-hidden base-container">
+  {{ range (.Paginator 4).Pages.ByDate.Reverse }}
+      <div class="w-full sm:w-1/2 lg:w-1/4 px-2 overflow-hidden">
+        {{ .Render "li" }}
+      </div>
+  {{ end }}
   {{ partial "pagination" . }}
 </div>
 

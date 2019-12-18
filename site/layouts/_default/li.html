@@ -1,6 +1,6 @@
 <a href="{{ .RelPermalink }}" class="">
-	<h2 class="">{{ .Title }}</h2>
-	<p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-	<p class="">{{ .Description }}</p>
-	<p class="">Read more →</p>
+	<img src="{{ .Params.mainimage }}" alt="{{ .Title }}" class="w-full hover:opacity-75 transition-normal">
+	<div class="py-4">
+		<h2 class="font-body text-sm uppercase tracking-widest mb-2">{{ .Title }}</h2>
+	</div>
 </a>

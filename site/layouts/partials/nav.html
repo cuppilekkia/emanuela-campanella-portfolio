@@ -13,11 +13,11 @@
   <div class="w-full block flex-grow md:flex md:items-center md:w-auto js-menu">
 
     <div class="text-sm md:flex-grow">
-      <a href="/" class="block mt-4 md:inline-block md:mt-0 mr-4">
+      <a href="/" class="block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
         Home
       </a>
 
-      <div class="group block mt-4 md:inline-block md:mt-0 mr-4">
+      <div class="group block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
         <a href="#" class="">
           Portfolio
         </a>
@@ -28,13 +28,13 @@
         </div>
       </div>
 
-      <!-- <a href="/blog" class="block mt-4 md:inline-block md:mt-0 mr-4">
+      <!-- <a href="/blog" class="block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
         Blog
       </a> -->
-      <a href="/about" class="block mt-4 md:inline-block md:mt-0 mr-4">
+      <a href="/about" class="block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
         About
       </a>
-      <a href="/contact" class="block mt-4 md:inline-block md:mt-0">
+      <a href="/contact" class="block md:inline-block md:mt-0 mt-4 text-xs tracking-wider uppercase">
         Contact
       </a>
     </div>
@@ -42,7 +42,7 @@
       <a href="#" class="inline-block text-sm px-4 py-2 leading-none border border-black rounded mt-4 md:mt-0">Download</a>
     </div> -->
     <div class="">
-      <ul class="text-sm md:flex-grow">
+      <ul class="text-sm">
         <li class="block mt-4 md:inline-block md:mt-0 mr-4">
           {{ $instagram := (printf "https://instagram.com/%s" .Site.Params.social.instagram) }}
           {{ partial "social-icon" (dict "link" $instagram "social" "instagram") }}

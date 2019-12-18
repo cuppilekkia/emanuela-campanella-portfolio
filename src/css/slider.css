@@ -34,12 +34,24 @@
   height: 30px;
 }
 
-.flickity-prev-next-button.previous{
-  left:60px;
+@screen sm {
+  .flickity-prev-next-button.previous{
+    left: 30px;
+  }
+  
+  .flickity-prev-next-button.next{
+    right: 30px;
+  }
 }
 
-.flickity-prev-next-button.next{
-  right:60px;
+@screen md {
+  .flickity-prev-next-button.previous{
+    left: 60px;
+  }
+  
+  .flickity-prev-next-button.next{
+    right: 60px;
+  }
 }
 
 /* icon color */
