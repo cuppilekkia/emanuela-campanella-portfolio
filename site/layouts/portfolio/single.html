@@ -1,16 +1,19 @@
 {{ define "main" }}
 
 <div class="base-container">
-  
-  <div class="flex flex-wrap max-w-5xl -mx-2 mb-8">
-    {{ range .Params.images }}
-      <div class="w-1/2 px-2 mb-4">
-        <img src="{{ .src }}" alt="{{ .caption }}">
-      </div>
-    {{ end }}
+  <div class="mb-24">
+    <div class="flex flex-wrap -mx-2">
+      {{ range .Params.images }}
+        <div class="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
+          <img src="{{ .src }}" alt="{{ .caption }}">
+        </div>
+      {{ end }}
+    </div>
   </div>
-
-  {{ .Content }}
+    
+  <div class="max-w-5xl m-auto portfolio-content">
+    {{ .Content }}
+  </div>
 </div>
 
 {{ end }}

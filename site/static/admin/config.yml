@@ -6,10 +6,13 @@ backend:
 
 media_library:
   name: cloudinary
-  output_filename_only: true
   config:
     cloud_name: cuppilekkia
     api_key: 231587635213359
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+          crop: fill
 
 public_folder: "img"
 
@@ -41,16 +44,20 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Head Image", name: "mainimage", widget: "image" }
-      - {
-          label: "Images",
-          name: "images",
-          widget: "list",
-          fields:
-            [
-              { label: Image, name: src, widget: image },
-              { label: Caption, name: caption, widget: string },
-            ],
-        }
+      - label: "Images"
+        name: "images"
+        widget: "list"
+        fields:
+          - label: Image
+            name: src
+            widget: image
+            media_library: 
+              config: 
+                default_transformations:
+                  - width: 500  
+          - label: Caption
+            name: caption
+            widget: string
   - name: "categorie"
     label: "Categorie"
     folder: "site/content/categorie"

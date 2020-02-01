@@ -8,3 +8,6 @@
 /* purgecss end ignore */
 
 @import 'tailwindcss/utilities';
+
+/* pages css */
+@import 'portfolio';
