@@ -2,7 +2,15 @@ backend:
   name: git-gateway
   branch: development
 
-media_folder: "site/static/img" # Folder where user uploaded files should go
+#media_folder: "site/static/img" # Folder where user uploaded files should go
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: cuppilekkia
+    api_key: 231587635213359
+    output_filename_only: true
+
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
