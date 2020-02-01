@@ -7,7 +7,7 @@ mainimage: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
 images:
   - caption: caption sourcing
     src: >-
-      https://res.cloudinary.com/cuppilekkia/image/upload/v1580563949/portfolio/lost%20in%20dreams/IMG_9733_uhwcij.jpg
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,dpr_auto,f_auto,q_auto,w_500/v1580563949/portfolio/lost%20in%20dreams/IMG_9733_uhwcij.jpg
 ---
 ## Title
 
