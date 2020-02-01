@@ -3,11 +3,14 @@ title: Emanuela Campanella Advertising photographer
 subtitle: Support sustainable farming while enjoying a cup
 slides:
   - caption: fashion dark model
-    src: slides/IMG_9987_xukvig.jpg
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557097/slides/opzione2_preferisco-l_altra_v8jh5l.jpg
   - caption: still life food
-    src: slides/copertina-face-loiudice_fbgrs7.jpg
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/shopping_1200x628_mogduv.jpg
   - caption: advertising
-    src: slides/shopping_1200x628_mogduv.jpg
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
   heading: Some nice intro text
   text: >-
