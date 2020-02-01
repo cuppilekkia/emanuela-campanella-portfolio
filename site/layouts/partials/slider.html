@@ -1,7 +1,7 @@
 <div class="js-flickity carousel mb-16 base-container">
 
   {{ range .images }}
-  <figure class="carousel-cell lg:h-auto">
+  <figure class="carousel-cell lg:h-auto flex items-center">
     <img data-flickity-lazyload="https://res.cloudinary.com/cuppilekkia/image/upload/w_2000,f_auto/{{ .src }}" alt="{{ .caption }}" srcset="">
     <!-- <div class="">
           <a href="/post" class="">{{ .caption }}</a>
