@@ -6,23 +6,8 @@ intro: some intro text
 mainimage: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
 images:
   - caption: caption sourcing
-    src: portfolio/lost in dreams/IMG_9982_pmpxy0.jpg
-  - caption: caption about
-    src: portfolio/lost in dreams/IMG_9733_uhwcij.jpg
-  - caption: '1'
-    src: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
-  - caption: '3'
-    src: portfolio/lost in dreams/IMG_9906_skv88c.jpg
-  - caption: '4'
-    src: portfolio/lost in dreams/IMG_9937_cwrsl4.jpg
-  - caption: '5'
-    src: portfolio/lost in dreams/IMG_9813_gszgxs.jpg
-  - caption: '6'
-    src: portfolio/lost in dreams/IMG_9879_hopek9.jpg
-  - caption: '2'
-    src: portfolio/lost in dreams/IMG_9987_xnwqvk.jpg
-  - caption: caption profits
-    src: portfolio/lost in dreams/IMG_9972_ovj66r.jpg
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/v1580563953/portfolio/lost%20in%20dreams/IMG_9982_pmpxy0.jpg
 ---
 ## Title
 
