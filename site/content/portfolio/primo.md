@@ -9,12 +9,8 @@ images:
     src: portfolio/lost in dreams/IMG_9982_pmpxy0.jpg
   - caption: caption about
     src: portfolio/lost in dreams/IMG_9733_uhwcij.jpg
-  - caption: caption profits
-    src: portfolio/lost in dreams/IMG_9972_ovj66r.jpg
   - caption: '1'
     src: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
-  - caption: '2'
-    src: portfolio/lost in dreams/IMG_9987_xnwqvk.jpg
   - caption: '3'
     src: portfolio/lost in dreams/IMG_9906_skv88c.jpg
   - caption: '4'
@@ -23,6 +19,10 @@ images:
     src: portfolio/lost in dreams/IMG_9813_gszgxs.jpg
   - caption: '6'
     src: portfolio/lost in dreams/IMG_9879_hopek9.jpg
+  - caption: '2'
+    src: portfolio/lost in dreams/IMG_9987_xnwqvk.jpg
+  - caption: caption profits
+    src: portfolio/lost in dreams/IMG_9972_ovj66r.jpg
 ---
 
 This [week](/wdwdw) we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts\*.
