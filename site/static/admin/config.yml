@@ -6,10 +6,10 @@ backend:
 
 media_library:
   name: cloudinary
+  output_filename_only: true
   config:
     cloud_name: cuppilekkia
     api_key: 231587635213359
-    output_filename_only: true
 
 public_folder: "img"
 

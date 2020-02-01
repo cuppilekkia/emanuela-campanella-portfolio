@@ -9,7 +9,7 @@ if (sliders && sliders.length >= 1) {
       dragThreshold: 20,
       selectedAttraction: 0.01,
       friction: 0.15,
-      lazyLoad: true
+      lazyLoad: 2
     });
     return inst;
   });
