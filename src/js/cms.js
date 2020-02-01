@@ -9,13 +9,9 @@ import ProductsPreview from "./cms-preview-templates/products";
 import ValuesPreview from "./cms-preview-templates/values";
 import ContactPreview from "./cms-preview-templates/contact";
 
-import config from "./cms-settings";
+import config from "./cms-settings/config";
 
-window.CMS_MANUAL_INIT = true;
-
-CMS.init({
-  config
-});
+CMS.init({ config });
 
 CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("home", HomePreview);
