@@ -10,7 +10,9 @@ media_library:
     cloud_name: cuppilekkia
     api_key: 231587635213359
     default_transformations:
-      - { fetch_format: auto, quality: auto, crop: fill }
+      - - fetch_format: auto
+          quality: auto
+          crop: fill
 
 public_folder: "img"
 
@@ -41,7 +43,13 @@ collections: # A list of collections the CMS should be able to edit
         displayFields: ["title"]
       - { label: "Intro", name: "intro", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Head Image", name: "mainimage", widget: "image" }
+      - label: "Head Image"
+        name: "mainimage"
+        widget: "image"
+        media_library: 
+          config: 
+            default_transformations:
+              - width: 500
       - label: "Images"
         name: "images"
         widget: "list"
@@ -52,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
             media_library: 
               config: 
                 default_transformations:
-                  - width: 500  
+                  - width: 500
           - label: Caption
             name: caption
             widget: string
@@ -65,7 +73,13 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Weight", name: "weight", widget: "number", default: 1, valueType: "int" }
       - { label: "Intro", name: "intro", widget: "text" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        media_library: 
+          config: 
+            default_transformations:
+              - width: 500
   - name: "pages"
     label: "Pages"
     files:
