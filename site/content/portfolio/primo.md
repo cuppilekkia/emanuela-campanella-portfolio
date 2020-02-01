@@ -4,7 +4,7 @@ date: 2019-11-14T15:04:10.000Z
 categories: fashion
 intro: some intro text
 mainimage: >-
-  https://res.cloudinary.com/cuppilekkia/image/upload/v1580563953/portfolio/lost%20in%20dreams/IMG_9982_pmpxy0.jpg
+  https://res.cloudinary.com/cuppilekkia/image/upload/v1580563946/portfolio/lost%20in%20dreams/IMG_9906_skv88c.jpg
 images:
   - caption: caption sourcing
     src: >-
