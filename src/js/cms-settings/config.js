@@ -16,14 +16,7 @@ const config = {
     name: "cloudinary",
     config: {
       cloud_name: "cuppilekkia",
-      api_key: 231587635213359,
-      default_transformations: [
-        {
-          fetch_format: "auto",
-          quality: "auto",
-          crop: "fill"
-        }
-      ]
+      api_key: 231587635213359
     }
   },
   // A list of collections the CMS should be able to edit

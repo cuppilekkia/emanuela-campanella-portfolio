@@ -25,6 +25,9 @@ const portfolio = {
         config: {
           default_transformations: [
             {
+              fetch_format: "auto",
+              quality: "auto",
+              crop: "fill",
               width: 500
             }
           ]
@@ -44,6 +47,9 @@ const portfolio = {
             config: {
               default_transformations: [
                 {
+                  fetch_format: "auto",
+                  quality: "auto",
+                  crop: "fill",
                   width: 500
                 }
               ]

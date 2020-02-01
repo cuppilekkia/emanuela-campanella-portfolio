@@ -22,6 +22,9 @@ const categorie = {
         config: {
           default_transformations: [
             {
+              fetch_format: "auto",
+              quality: "auto",
+              crop: "fill",
               width: 500
             }
           ]

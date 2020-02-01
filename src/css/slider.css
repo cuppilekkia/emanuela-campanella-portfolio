@@ -67,6 +67,8 @@
 /* position dots up a bit */
 .flickity-page-dots {
   bottom: -20px;
+  left: 0;
+  right: 0;
 }
 
 /* dots are lines */

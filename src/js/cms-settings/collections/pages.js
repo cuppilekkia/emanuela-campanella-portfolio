@@ -14,7 +14,23 @@ const pages = {
           name: "slides",
           widget: "list",
           fields: [
-            { label: "Image", name: "src", widget: "image" },
+            {
+              label: "Image",
+              name: "src",
+              widget: "image",
+              media_library: {
+                config: {
+                  default_transformations: [
+                    {
+                      fetch_format: "auto",
+                      quality: "auto",
+                      crop: "fill",
+                      width: 2000
+                    }
+                  ]
+                }
+              }
+            },
             { label: "Caption", name: "caption", widget: "string" }
           ]
         },
