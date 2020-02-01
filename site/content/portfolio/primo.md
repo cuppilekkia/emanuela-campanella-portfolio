@@ -3,7 +3,8 @@ title: Test portfolio
 date: 2019-11-14T15:04:10.000Z
 categories: fashion
 intro: some intro text
-mainimage: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
+mainimage: >-
+  https://res.cloudinary.com/cuppilekkia/image/upload/v1580563948/portfolio/lost%20in%20dreams/IMG_9979_qkz7ub.jpg
 images:
   - caption: caption sourcing
     src: >-
