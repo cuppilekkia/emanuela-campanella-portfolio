@@ -1,8 +1,8 @@
 ---
 title: fashion
 slug: fashion
-intro: la fashion fotografia
-image: /img/about-sustainable-farming.jpg
 weight: 1
+intro: la fashion fotografia
+image: categorie/fashion_opzione1_3x4_nki3ml.jpg
 ---
 
