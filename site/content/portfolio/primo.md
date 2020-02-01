@@ -3,14 +3,26 @@ title: Test portfolio
 date: 2019-11-14T15:04:10.000Z
 categories: fashion
 intro: some intro text
-mainimage: /img/about-sustainable-farming.jpg
+mainimage: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
 images:
   - caption: caption sourcing
-    src: /img/about-direct-sourcing.jpg
+    src: portfolio/lost in dreams/IMG_9982_pmpxy0.jpg
   - caption: caption about
-    src: /img/about-jumbotron.jpg
+    src: portfolio/lost in dreams/IMG_9733_uhwcij.jpg
   - caption: caption profits
-    src: /img/about-reinvest-profits.jpg
+    src: portfolio/lost in dreams/IMG_9972_ovj66r.jpg
+  - caption: '1'
+    src: portfolio/lost in dreams/IMG_9979_qkz7ub.jpg
+  - caption: '2'
+    src: portfolio/lost in dreams/IMG_9987_xnwqvk.jpg
+  - caption: '3'
+    src: portfolio/lost in dreams/IMG_9906_skv88c.jpg
+  - caption: '4'
+    src: portfolio/lost in dreams/IMG_9937_cwrsl4.jpg
+  - caption: '5'
+    src: portfolio/lost in dreams/IMG_9813_gszgxs.jpg
+  - caption: '6'
+    src: portfolio/lost in dreams/IMG_9879_hopek9.jpg
 ---
 
 This [week](/wdwdw) we’ll **take** a look at all the steps required to make astonishing coffee with a Chemex at home. The Chemex Coffeemaker is a manual, pour-over style glass-container coffeemaker that Peter Schlumbohm invented in 1941, and which continues to be manufactured by the Chemex Corporation in Chicopee, Massachusetts\*.
