@@ -10,9 +10,7 @@ media_library:
     cloud_name: cuppilekkia
     api_key: 231587635213359
     default_transformations:
-      - - fetch_format: auto
-          quality: auto
-          crop: fill
+      - { fetch_format: auto, quality: auto, crop: fill }
 
 public_folder: "img"
 

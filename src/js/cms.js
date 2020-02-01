@@ -1,4 +1,3 @@
-import React from "react";
 import CMS from "netlify-cms";
 
 // Import main site styles as a string to inject into the CMS preview pane
@@ -10,10 +9,17 @@ import ProductsPreview from "./cms-preview-templates/products";
 import ValuesPreview from "./cms-preview-templates/values";
 import ContactPreview from "./cms-preview-templates/contact";
 
-CMS.registerPreviewStyle(styles, {raw: true});
+import config from "./cms-settings";
+
+window.CMS_MANUAL_INIT = true;
+
+CMS.init({
+  config
+});
+
+CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("products", ProductsPreview);
 CMS.registerPreviewTemplate("values", ValuesPreview);
 CMS.registerPreviewTemplate("contact", ContactPreview);
-CMS.init();
