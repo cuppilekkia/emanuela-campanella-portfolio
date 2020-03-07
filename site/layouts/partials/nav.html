@@ -1,57 +1,52 @@
-<nav class="fixed bg-white w-full flex items-center justify-between flex-wrap py-6 base-container z-10 border-b">
-  <div class="flex items-center flex-shrink-0 mr-6">
-    <a href="/" class="font-semibold text-xl tracking-tight">Emanuela Campanella</a>
+<nav class="fixed bg-white w-full flex items-center justify-between flex-wrap p-4 md:py-6 base-container z-10 border-b">
+  <div class="flex items-center flex-shrink-0 mr-6 md:hidden">
+    <a href="/" class="font-semibold text-xl tracking-tight uppercase tracking-widest">Emanuela Campanella</a>
   </div>
-  <div class="block md:hidden">
-    <button class="flex items-center px-3 py-2 border rounded border-black hover:border-gold js-menu-toggle">
-      <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <title>Menu</title>
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
+  <div class="block md:hidden z-20">
+    <button class="flex items-center js-menu-toggle">
+      <i class="lni-menu size-md js-menu-toggle-icon"></i>
     </button>
   </div>
-  <div class="w-full block flex-grow md:flex md:items-center md:w-auto js-menu">
-
+  
+  <div class="bg-white fixed md:relative top-0 bottom-0 left-0 right-0 w-full block flex-grow md:flex md:items-center md:w-auto pl-8 md:pl-0 pt-24 md:pt-0 js-menu">
     <div class="text-sm md:flex-grow">
-      <a href="/" class="block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
+      <a href="/" class="block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
         Home
       </a>
 
-      <div class="group block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
-        <a href="#" class="">
-          Portfolio
-        </a>
+      <a href="/portfolio" class="block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
+        Portfolio
+      </a>
+      <!-- <div class="group block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
         <div class="items-center absolute pt-2 invisible group-hover:visible w-auto z-10">
           {{ range (where .Site.RegularPages "Type" "categorie") }}
             <a href="/{{ .Params.slug }}" class="px-4 py-2 block bg-gray-100 hover:bg-gray-200">{{ title .Params.title }}</a>
           {{ end }}
         </div>
-      </div>
+      </div> -->
 
-      <!-- <a href="/blog" class="block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
+      <a href="/blog" class="block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
         Blog
-      </a> -->
-      <a href="/about" class="block md:inline-block md:mt-0 mr-4 mt-4 text-xs tracking-wider uppercase">
+      </a>
+      <a href="#" class="block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
+        Hire me
+      </a>
+      <a href="/about" class="block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
         About
       </a>
-      <a href="/contact" class="block md:inline-block md:mt-0 mt-4 text-xs tracking-wider uppercase">
-        Contact
-      </a>
     </div>
-    <!-- <div>
-      <a href="#" class="inline-block text-sm px-4 py-2 leading-none border border-black rounded mt-4 md:mt-0">Download</a>
-    </div> -->
-    <div class="">
-      <ul class="text-sm">
-        <li class="block mt-4 md:inline-block md:mt-0 mr-4">
+    
+    <div class="mt-4 md:mt-0">
+      <ul class="text-xl md:text-sm">
+        <li class="block mt-4 inline-block md:mt-0 mr-1 md:mr-4">
           {{ $instagram := (printf "https://instagram.com/%s" .Site.Params.social.instagram) }}
           {{ partial "social-icon" (dict "link" $instagram "social" "instagram") }}
         </li>
-        <li class="block mt-4 md:inline-block md:mt-0 mr-4">
+        <li class="block mt-4 inline-block md:mt-0 mr-1 md:mr-4">
           {{ $facebook := (printf "https://facebook.com/%s" .Site.Params.social.facebook) }}
           {{ partial "social-icon" (dict "link" $facebook "social" "facebook") }}
         </li>
-        <li class="block mt-4 md:inline-block md:mt-0">
+        <li class="block mt-4 inline-block md:mt-0">
           {{ $linkedin := (printf "https://linkedin.com/in/%s" .Site.Params.social.linkedin) }}
           {{ partial "social-icon" (dict "link" $linkedin "social" "linkedin") }}
         </li>

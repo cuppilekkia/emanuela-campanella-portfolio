@@ -4,13 +4,18 @@
 
 <body class="font-body">
   
-  {{ block "header" . }}{{ partial "nav" . }}{{end}}
+  {{ block "header" . }}
+    {{ partial "nav" . }}
+  {{end}}
 
-  <main class="pt-24 sm:pt-32 overflow-hidden">
+  <main class="pt-24 overflow-hidden">
+    {{ partial "title" }}
     {{ block "main" . }}{{ end }}
   </main>
 
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}} {{ $script := .Site.Data.webpack.main }} {{ with $script.js }}
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}} 
+  
+  {{ $script := .Site.Data.webpack.main }} {{ with $script.js }}
   <script src="{{ relURL . }}"></script>
   {{ end }}
   
