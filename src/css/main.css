@@ -3,6 +3,7 @@
 @import 'tailwindcss/base';
 @import 'custombase';
 @import 'slider';
+@import 'masonry';
 @import 'tailwindcss/components';
 
 /* purgecss end ignore */

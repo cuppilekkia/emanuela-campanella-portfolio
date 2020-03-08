@@ -1,7 +1,7 @@
 ---
 title: Un food
 date: 2020-03-08T19:48:37.401Z
-categories: Food
+categories: food
 intro: Questo è un food portfolio item
 mainimage: >-
   https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_500/v1580563948/portfolio/lost%20in%20dreams/IMG_9987_xnwqvk.jpg

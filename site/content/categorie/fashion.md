@@ -1,5 +1,5 @@
 ---
-title: fashion
+title: Fashion
 slug: fashion
 weight: 1
 intro: la fashion fotografia

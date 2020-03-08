@@ -1,5 +1,5 @@
 ---
-title: commercial
+title: Commercial
 slug: commercial
 weight: 2
 intro: the commercial portfolio

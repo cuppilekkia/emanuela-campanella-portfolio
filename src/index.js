@@ -1,5 +1,6 @@
-require("./js/blocks/slider.js");
-require("./js/blocks/menu.js");
-
 import "./css/main.css";
-//import "./css/slider.css";
+
+require("./js/blocks/slider.js");
+require("./js/blocks/masonry");
+require("./js/blocks/menu.js");
+// import "./css/slider.css";

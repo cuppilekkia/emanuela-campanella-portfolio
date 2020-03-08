@@ -12,7 +12,7 @@ const portfolio = {
       widget: "relation",
       collection: "categorie",
       searchFields: ["title", "intro"],
-      valueField: "title",
+      valueField: "slug",
       displayFields: ["title"]
     },
     { label: "Intro", name: "intro", widget: "text" },
