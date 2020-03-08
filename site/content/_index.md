@@ -13,22 +13,31 @@ slides:
       https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
   heading: |-
-    Look, I'm not\
+    ## Look, I'm not\
     an intellectual – \
     I just take pictures.
+
+    > Helmut Newton
   text: >-
-    Anim amet enim deserunt aute laborum anim non Lorem. Aliquip Lorem aliqua
-    esse laboris nostrud fugiat duis culpa laborum duis pariatur cillum quis
-    adipisicing. Incididunt ex nostrud consequat in elit exercitation do
-    commodo. Mollit occaecat ut ad ea qui minim enim veniam. Dolore irure dolore
-    cupidatat nostrud est aliquip elit.
+    Natasha Yankelevich is the photographer and designer from Moscow.\
 
-    Labore mollit in esse aute ea qui irure occaecat amet est ad. Tempor enim
-    quis duis eu. Veniam incididunt laboris magna incididunt aute aliqua elit
-    labore.
+    She was born in November 1, 1988. In 2005 she entered the Russian Tourism
+    and Service University deciding to learn graphic design. After ending the
+    university she worked as the graphic and web designer. Also she started to
+    take part in creative shootings as a model. She was inspired by the process
+    and the photo industry, so decided to make captures by herself.\
 
-    Ex reprehenderit irure voluptate dolor. Cillum quis eiusmod laboris sit
-    tempor amet magna nostrud laborum. Exercitation voluptate sunt aute laboris
-    occaecat laborum do qui Lorem qui commodo eiusmod.
+    \
+
+    Since that time Natasha took part in numerous projects - сreative and
+    fashion shootings, magazine's publications, exhibitions. Natasha’s first
+    exhibition took place in Moscow gallery “Zdes na Taganke”\
+
+    \
+
+    The main thing in her photography is to get a real emotion, that can be
+    understandable for everyone. All of her subjects are about sensuality in
+    each of us. It is the little stories about thoughts, senses and invisible
+    miracles, on way to yourself.
 ---
 
