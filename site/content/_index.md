@@ -13,8 +13,8 @@ slides:
       https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
   heading: |-
-    Look, I'm not 
-    an intellectual – 
+    Look, I'm not\
+    an intellectual – \
     I just take pictures.
   text: >-
     Anim amet enim deserunt aute laborum anim non Lorem. Aliquip Lorem aliqua
