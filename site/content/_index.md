@@ -12,7 +12,7 @@ slides:
     src: >-
       https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
-  heading: Some nice intro text
+  heading: Look, I'm not an intellectual – I just take pictures.
   text: >-
     Anim amet enim deserunt aute laborum anim non Lorem. Aliquip Lorem aliqua
     esse laboris nostrud fugiat duis culpa laborum duis pariatur cillum quis

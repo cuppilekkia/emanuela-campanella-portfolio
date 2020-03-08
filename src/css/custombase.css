@@ -13,11 +13,11 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-5xl;
 }
 
 h3 {
-  @apply text-2xl;
+  @apply text-4xl;
 }
 
 /* Custom container */

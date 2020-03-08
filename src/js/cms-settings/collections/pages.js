@@ -39,7 +39,7 @@ const pages = {
           name: "blurb",
           widget: "object",
           fields: [
-            { label: "Heading", name: "heading", widget: "string" },
+            { label: "Heading", name: "heading", widget: "text" },
             { label: "Text", name: "text", widget: "text" }
           ]
         }

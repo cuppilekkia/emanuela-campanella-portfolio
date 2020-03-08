@@ -1,4 +1,4 @@
-<nav class="fixed bg-white w-full flex items-center justify-between flex-wrap p-4 md:py-6 base-container z-10 border-b">
+<nav class="fixed bg-white w-full flex items-center justify-between flex-wrap p-4 md:py-6 sm:px-6 md:px-12 base-container z-10 border-b">
   <div class="flex items-center flex-shrink-0 mr-6 md:hidden">
     <a href="/" class="font-semibold text-xl tracking-tight uppercase tracking-widest">Emanuela Campanella</a>
   </div>
@@ -7,9 +7,10 @@
       <i class="lni-menu size-md js-menu-toggle-icon"></i>
     </button>
   </div>
+
   
-  <div class="bg-white fixed md:relative top-0 bottom-0 left-0 right-0 w-full block flex-grow md:flex md:items-center md:w-auto pl-8 md:pl-0 pt-24 md:pt-0 js-menu">
-    <div class="text-sm md:flex-grow">
+  <div class="bg-white fixed md:relative md:flex-row-reverse top-0 bottom-0 left-0 right-0 w-full block md:flex md:justify-center pl-8 md:pl-0 pt-24 md:pt-0 js-menu">
+    <div class="text-sm">
       <a href="/" class="block md:inline-block md:mt-0 mr-4 mt-4 text-lg md:text-xs font-bold md:font-body tracking-wider uppercase">
         Home
       </a>
@@ -35,8 +36,7 @@
         About
       </a>
     </div>
-    
-    <div class="mt-4 md:mt-0">
+    <div class="mt-4 md:mt-0 md:absolute md:left-0">
       <ul class="text-xl md:text-sm">
         <li class="block mt-4 inline-block md:mt-0 mr-1 md:mr-4">
           {{ $instagram := (printf "https://instagram.com/%s" .Site.Params.social.instagram) }}
@@ -52,6 +52,5 @@
         </li>
       </ul>
     </div>
-
   </div>
 </nav>
