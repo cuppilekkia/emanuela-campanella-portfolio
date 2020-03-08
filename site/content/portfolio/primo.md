@@ -1,7 +1,7 @@
 ---
 title: Test portfolio
 date: 2019-11-14T15:04:10.000Z
-categories: fashion
+categories: commercial
 intro: some intro text
 mainimage: >-
   https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_500/v1580563945/portfolio/lost%20in%20dreams/IMG_9813_gszgxs.jpg
