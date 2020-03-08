@@ -13,9 +13,9 @@ slides:
       https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
   heading: |-
-    Look, I'm not \
-    an intellectual –\
-    I just take pictures.
+    ## Look, I'm not \
+    ## an intellectual –\
+    ## I just take pictures.
 
     > Helmut Newton
   text: >-

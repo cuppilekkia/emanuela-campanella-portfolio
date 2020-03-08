@@ -20,6 +20,15 @@ h3 {
   @apply text-4xl;
 }
 
+blockquote {
+  @apply text-xs uppercase pt-8 flex tracking-widest;
+}
+
+blockquote:before {
+  content: '\2212';
+  @apply pr-2 relative;
+}
+
 /* Custom container */
 .base-container {
   @apply px-4;
