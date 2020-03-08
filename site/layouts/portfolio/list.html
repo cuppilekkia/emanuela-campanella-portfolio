@@ -1,7 +1,13 @@
 {{ define "main" }}
 
 <div class="mb-4 overflow-hidden base-container">
-  
+  <div class="flex flex-wrap justify-center py-4 w-full">
+    <button class="hover:text-gold px-2 uppercase js-masonry-filter active" data-filter="all">All</button>
+    {{ range (where .Site.RegularPages "Type" "categorie") }}
+      <button class="hover:text-gold px-2 uppercase js-masonry-filter" data-filter="{{ .Slug }}">{{ .Title }}</button>
+    {{ end }}
+  </div>
+
   <div class="js-masonry ">
     <div class="grid-gutter"></div>
     <div class="grid-sizer"></div>

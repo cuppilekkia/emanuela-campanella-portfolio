@@ -23,9 +23,9 @@ const categorie = {
           default_transformations: [
             {
               fetch_format: "auto",
-              quality: "auto",
+              quality: 75,
               crop: "fill",
-              width: 500
+              width: 700
             }
           ]
         }

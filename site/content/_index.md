@@ -4,13 +4,13 @@ subtitle: Support sustainable farming while enjoying a cup
 slides:
   - caption: fashion dark model
     src: >-
-      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557097/slides/opzione2_preferisco-l_altra_v8jh5l.jpg
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_75,w_2000/v1580557097/slides/opzione2_preferisco-l_altra_v8jh5l.jpg
   - caption: still life food
     src: >-
-      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/shopping_1200x628_mogduv.jpg
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_75,w_2000/v1580557096/slides/shopping_1200x628_mogduv.jpg
   - caption: advertising
     src: >-
-      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_75,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
   heading: |-
     ## Look, I'm not \
