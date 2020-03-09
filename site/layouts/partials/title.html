@@ -1,3 +1,7 @@
 <div class="hidden md:block text-center mb-12 pt-4">
-  <span class="font-semibold text-xl tracking-tight uppercase tracking-widest">Emanuela Campanella</span>
+  {{ if .IsHome }}
+    <h1 class="font-body font-semibold text-xl tracking-tight uppercase tracking-widest">Emanuela Campanella</h1>
+  {{ else }}
+    <span class="font-semibold text-xl tracking-tight uppercase tracking-widest">Emanuela Campanella</span>
+  {{ end }}
 </div>
