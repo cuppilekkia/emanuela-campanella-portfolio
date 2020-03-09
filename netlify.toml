@@ -9,3 +9,6 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
+
+[context.branch-deploy]
+  command = "yarn build:preview"
