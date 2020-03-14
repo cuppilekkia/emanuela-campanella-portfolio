@@ -15,6 +15,15 @@ const portfolio = {
       valueField: "slug",
       displayFields: ["title"]
     },
+    {
+      label: "Tipologia",
+      name: "album",
+      widget: "select",
+      options: [
+        { label: "Singolo", value: "single" },
+        { label: "Album", value: "album" }
+      ]
+    },
     { label: "Intro", name: "intro", widget: "text" },
     { label: "Body", name: "body", widget: "markdown" },
     {
