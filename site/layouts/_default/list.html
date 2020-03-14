@@ -1,12 +1,11 @@
 {{ define "main" }}
 
 <div class="flex flex-wrap mb-4 -mx-2 overflow-hidden base-container">
-  {{ range (.Paginator 4).Pages.ByDate.Reverse }}
+  {{ range .Pages.ByDate.Reverse }}
       <div class="w-full sm:w-1/2 lg:w-1/4 px-2 overflow-hidden">
         {{ .Render "li" }}
       </div>
   {{ end }}
-  {{ partial "pagination" . }}
 </div>
 
 {{end}}
