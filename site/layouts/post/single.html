@@ -1,21 +1,21 @@
 {{ define "main" }}
 
-  <div class="base-container">
+  <div class="base-container max-w-4xl m-auto">
     {{ if .Params.image }}
-    <img src="{{ .Params.image }}" alt="{{ .Title }}" />
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="mb-12"/>
     {{ end }}
     
-    <h1 class="">{{.Title}}</h1>
+    <h1 class="mb-12">{{.Title}}</h1>
     
-    <div class="">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+    <div class="leading-relaxed mb-6 text-xs">
+      <p>{{ .Date.Format "2 January 2006" }}</p>
       <p>Read in {{ .ReadingTime }} minutes</p>
     </div>
     
-    <div class="">
-      <p>{{ .Description }}</p>
+    <div class="leading-relaxed mb-12">
+      <p class="mb-12">{{ .Description }}</p>
       {{ .Content }}
     </div>
   </div>
-  
+
 {{ end }}
