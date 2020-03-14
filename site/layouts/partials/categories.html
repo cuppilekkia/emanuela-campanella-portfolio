@@ -4,33 +4,44 @@
 	</div>
 	
 	<div class="flex flex-wrap text-center">
-		<!-- {{ range (where .Site.RegularPages "Type" "categorie") }}
-			{{ partial "category-single-box" . }}
-		{{ end }} -->
+		{{ $cats := (where .Site.RegularPages "Type" "categorie") }}
+		{{ $cat1 := index $cats 0 }}
+		{{ $cat2 := index $cats 1 }}
+		{{ $cat3 := index $cats 2 }}
+		{{ $cat4 := index $cats 3 }}
+		
 		<div class="hidden md:block w-1/12"></div>
 		<div class="w-full md:w-5/12 md:pr-8 md:pt-12 flex flex-col items-center">
 			<div class="mb-24">
-				<img src="https://placekitten.com/400/650" class="mb-10" alt="">
-				<h2 class="text-2xl mb-4">Fashion</h2>
-				<a href="" class="text-xs">Watch gallery <i class="lni-arrow-right align-text-bottom"></i></a>
+				<img src="{{ $cat1.Params.image }}" class="mb-10" alt="{{ $cat1.Params.title }}">
+				<h2 class="text-2xl mb-4">{{ $cat1.Params.title }}</h2>
+				<a href="{{ $cat1.Params.slug }}" class="text-xs">
+					Watch gallery <i class="lni-arrow-right align-text-bottom"></i>
+				</a>
 			</div>
 			
 			<div class="mb-24 md:mb-0">
-				<img src="https://placekitten.com/350/200" class="mb-10" alt="">
-				<h2 class="text-2xl mb-4">Food</h2>
-				<a href="" class="text-xs">Watch gallery <i class="lni-arrow-right align-text-bottom"></i></a>
+				<img src="{{ $cat2.Params.image }}" class="mb-10" alt="{{ $cat2.Params.title }}">
+				<h2 class="text-2xl mb-4">{{ $cat2.Params.title }}</h2>
+				<a href="{{ $cat2.Params.slug }}" class="text-xs">
+					Watch gallery <i class="lni-arrow-right align-text-bottom"></i>
+				</a>
 			</div>
 		</div>
 		<div class="w-full md:w-5/12 md:pl-8 flex flex-col items-center">
 			<div class="mb-24">
-				<img src="https://placekitten.com/500/300" class="mb-10" alt="">
-				<h2 class="text-2xl mb-4">Advertising</h2>
-				<a href="" class="text-xs">Watch gallery <i class="lni-arrow-right align-text-bottom"></i></a>
+				<img src="{{ $cat3.Params.image }}" class="mb-10" alt="{{ $cat3.Params.title }}">
+				<h2 class="text-2xl mb-4">{{ $cat3.Params.title }}</h2>
+				<a href="{{ $cat3.Params.slug }}" class="text-xs">
+					Watch gallery <i class="lni-arrow-right align-text-bottom"></i>
+				</a>
 			</div>
 			<div class="mb-24 md:mb-0">
-				<img src="https://placekitten.com/300/400" class="mb-10" alt="">
-				<h2 class="text-2xl mb-4">Portrait</h2>
-				<a href="" class="text-xs">Watch gallery <i class="lni-arrow-right align-text-bottom"></i></a>
+				<img src="{{ $cat4.Params.image }}" class="mb-10" alt="{{ $cat4.Params.title }}">
+				<h2 class="text-2xl mb-4">{{ $cat4.Params.title }}</h2>
+				<a href="{{ $cat4.Params.slug }}" class="text-xs">
+					Watch gallery <i class="lni-arrow-right align-text-bottom"></i>
+				</a>
 			</div>
 		</div>
 		<div class="hidden md:block w-1/12"></div>

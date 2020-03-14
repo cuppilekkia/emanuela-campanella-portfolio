@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="mb-4 overflow-hidden base-container">
+
+  <div class="js-masonry ">
+    <div class="grid-gutter"></div>
+    <div class="grid-sizer"></div>
+    {{ range (.Paginator 4).Pages.ByDate.Reverse }}
+        <div class="grid-item overflow-hidden {{ .Params.categories }}">
+          {{ .Render "li" }}
+        </div>
+    {{ end }}
+  </div>
+
+</div>
+
+{{end}}
