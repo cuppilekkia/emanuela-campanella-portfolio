@@ -9,7 +9,7 @@
   {{end}}
 
   <main class="pt-24 overflow-hidden">
-    {{ partial "title" . }}
+    {{ block "title" . }}{{ partial "title" (dict "Title" $.Site.Params.Author "IsHome" .IsHome) }}{{ end }}
     {{ block "main" . }}{{ end }}
   </main>
 

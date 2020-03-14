@@ -24,3 +24,4 @@ disableKinds = ["RSS", "taxonomyTerm"]
 [permalinks]
   categories = "/:title/"
   portfolio = "/:slug/"
+  post = "/:section/:slug/"

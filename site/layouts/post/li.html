@@ -1,0 +1,7 @@
+<a href="{{ .RelPermalink }}" class="">
+  {{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="w-full hover:opacity-75 transition-normal">
+  {{ end }}
+
+  <h2 class="text-xl tracking-wide mb-2 py-4">{{ .Title }}</h2>
+</a>
