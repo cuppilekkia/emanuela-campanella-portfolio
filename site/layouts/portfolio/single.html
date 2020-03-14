@@ -10,9 +10,7 @@
     <!-- Portfolio Single -->
     <div>
       {{ $item := index .Params.images 0 }}
-      <a data-fslightbox class="grid-item overflow-hidden" href="{{ $item.src }}">
-        <img src="{{ $item.src }}" alt="{{ $item.caption }}" class="w-full">
-      </a>
+      {{ partial "portfolio/image-lightbox" $item }}
     </div>
     {{ else }}
     <!-- Portfolio Album -->
@@ -20,9 +18,7 @@
       <div class="grid-gutter"></div>
       <div class="grid-sizer"></div>
       {{ range .Params.images }}
-        <a data-fslightbox class="grid-item overflow-hidden" href="{{ .src }}">
-          <img src="{{ .src }}" alt="{{ .caption }}">
-        </a>
+        {{ partial "portfolio/image-lightbox" . }}
       {{ end }}
     </div>
     {{ end }}
