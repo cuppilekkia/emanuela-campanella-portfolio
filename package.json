@@ -19,7 +19,6 @@
         "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
     },
     "author": "Antonio Coppola",
-    "license": "GNUv3",
     "devDependencies": {
         "@babel/core": "^7.5.5",
         "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
