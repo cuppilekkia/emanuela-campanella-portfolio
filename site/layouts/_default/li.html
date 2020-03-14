@@ -1,6 +1,8 @@
 <a href="{{ .RelPermalink }}" class="">
-	<img src="{{ .Params.mainimage }}" alt="{{ .Title }}" class="w-full hover:opacity-75 transition-normal">
-	<div class="py-4">
-		<h2 class="font-body text-sm uppercase tracking-widest mb-2">{{ .Title }}</h2>
+	<div class="absolute top-0 left-0 w-full bottom-0 opacity-0 hover:opacity-75 bg-gray-800 transition-normal flex flex-col justify-center items-center">
+		<h2 class="text-white text-2xl tracking-wide mb-2">{{ .Title }}</h2>
+		<hr class="w-1/4 bg-white mb-6">
+		<p class="text-white font-bold uppercase tracking-widest">Watch <i class="lni-arrow-right align-text-bottom"></i></p>
 	</div>
+	<img src="{{ .Params.mainimage }}" alt="{{ $.Site.Params.Author }} {{ .Title }}" class="w-full">
 </a>
