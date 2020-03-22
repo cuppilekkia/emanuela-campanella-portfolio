@@ -48,7 +48,8 @@ module.exports = {
         "900": "#212121"
       },
       white: "#ffffff",
-      gold: "#856f38"
+      gold: "#856f38",
+      "gold-light": "#a98d47"
     },
     extend: {
       spacing: {

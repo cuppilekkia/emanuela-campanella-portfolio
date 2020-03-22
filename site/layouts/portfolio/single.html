@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-<div class="base-container md:flex">
-  <div class="md:w-2/5 md:pr-24 mb-12 portfolio-content">
+<div class="base-container lg:flex">
+  <div class="lg:w-2/5 lg:pr-24 mb-12 styled-content">
     {{ .Content }}
   </div>
   
-  <div class="md:w-3/5">
+  <div class="lg:w-3/5">
     {{ if eq (index .Params "album") "single" }}
     <!-- Portfolio Single -->
     <div>

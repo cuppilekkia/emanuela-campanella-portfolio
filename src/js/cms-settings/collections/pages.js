@@ -46,12 +46,12 @@ const pages = {
       ]
     },
     {
-      file: "site/content/contact/_index.md",
-      label: "Contact Page",
-      name: "contact",
+      file: "site/content/about/_index.md",
+      label: "About Page",
+      name: "about",
       fields: [
         { label: "Title", name: "title", widget: "string" },
-        { label: "Logo", name: "logo", widget: "image" },
+        { label: "Image", name: "image", widget: "image" },
         { label: "Body", name: "body", widget: "markdown" },
         {
           label: "Contact Entries",

@@ -58,7 +58,7 @@ blockquote:before {
 }
 
 a {
-  @apply transition-normal;
+  @apply transition-normal text-black;
 }
 
 a:hover {
