@@ -31,7 +31,7 @@ blockquote:before {
 
 /* Custom container */
 .base-container {
-  @apply px-4;
+  @apply px-4 m-auto max-w-screen-xl;
 }
 
 @screen sm {
@@ -57,6 +57,7 @@ blockquote:before {
   transition: .5s ease-in-out;
 }
 
+/* Links */
 a {
   @apply transition-normal text-black;
 }
@@ -67,4 +68,13 @@ a:hover {
 
 .active {
   @apply text-gold;
+}
+
+/* Image utility */
+.fill {
+  @apply overflow-hidden flex justify-center items-center;
+
+  img {
+    @apply min-h-full min-w-full object-cover;
+  }
 }

@@ -3,10 +3,10 @@
 <div class="mb-4 overflow-hidden base-container">
 
   <div class="js-masonry ">
-    <div class="grid-gutter"></div>
-    <div class="grid-sizer"></div>
+    <div class="masonry-gutter"></div>
+    <div class="masonry-sizer"></div>
     {{ range .Pages.ByDate.Reverse }}
-        <div class="grid-item overflow-hidden {{ .Params.categories }}">
+        <div class="masonry-item overflow-hidden {{ .Params.categories }}">
           {{ .Render "li" }}
         </div>
     {{ end }}

@@ -39,6 +39,23 @@ const pages = {
           name: "blurb",
           widget: "object",
           fields: [
+            {
+              label: "About Image",
+              name: "image",
+              widget: "image",
+              media_library: {
+                config: {
+                  default_transformations: [
+                    {
+                      fetch_format: "auto",
+                      quality: "auto",
+                      crop: "fill",
+                      width: 1000
+                    }
+                  ]
+                }
+              }
+            },
             { label: "Heading", name: "heading", widget: "markdown" },
             { label: "Text", name: "text", widget: "markdown" }
           ]

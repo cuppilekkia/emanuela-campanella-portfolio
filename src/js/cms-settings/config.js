@@ -15,6 +15,7 @@ const config = {
   media_library: {
     name: "cloudinary",
     config: {
+      // These are not sensitive ;)
       cloud_name: "cuppilekkia",
       api_key: 231587635213359
     }

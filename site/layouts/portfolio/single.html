@@ -15,8 +15,8 @@
     {{ else }}
     <!-- Portfolio Album -->
     <div class="js-masonry">
-      <div class="grid-gutter"></div>
-      <div class="grid-sizer"></div>
+      <div class="masonry-gutter"></div>
+      <div class="masonry-sizer"></div>
       {{ range .Params.images }}
         {{ partial "portfolio/image-lightbox" . }}
       {{ end }}

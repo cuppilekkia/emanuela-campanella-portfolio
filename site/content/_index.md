@@ -12,12 +12,8 @@ slides:
     src: >-
       https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_75,w_500/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
 blurb:
-  heading: |-
-    ## Look, I'm not
-    ## an intellectual –
-    ## I just take pictures.
-
-    > Helmut Newton
+  image: /img/instagram/instagram-3.jpg
+  heading: Look, I'm not an intellectual – I just take pictures.
   text: >-
     Natasha Yankelevich is the photographer and designer from Moscow.\
 

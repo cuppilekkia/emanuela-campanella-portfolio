@@ -54,7 +54,13 @@ module.exports = {
     extend: {
       spacing: {
         "96": "24rem",
-        "128": "32rem"
+        "128": "32rem",
+        "160": "40rem",
+        "192": "48rem"
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        "19": "repeat(19, minmax(0, 1fr))"
       }
     }
   },

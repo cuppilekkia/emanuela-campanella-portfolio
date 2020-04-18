@@ -1,32 +1,32 @@
-.grid-sizer, .grid-item {
+.masonry-sizer, .masonry-item {
   width: 100%;
 }
 
-.grid-item {
+.masonry-item {
   margin-bottom: 10px;
 }
 
-.grid-gutter {
+.masonry-gutter {
   width: 0px;
 }
 
 @screen sm {
-  .grid-sizer, .grid-item {
+  .masonry-sizer, .masonry-item {
     width: calc(48%);
   } 
-  .grid-gutter {
+  .masonry-gutter {
     width: calc(4%);
   }
 }
 
 @screen md {
-  .grid-sizer, .grid-item {
+  .masonry-sizer, .masonry-item {
     width: calc((100% - 40px)/3);
   }
-  .grid-item {
+  .masonry-item {
     margin-bottom: 20px;
   }
-  .grid-gutter {
+  .masonry-gutter {
     width: 20px;
   }
 }

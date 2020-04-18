@@ -4,10 +4,10 @@ const imagesLoaded = require("imagesloaded");
 
 function initPortfolioIso(grid) {
   window.portfolioIso = new Isotope(grid, {
-    itemSelector: ".grid-item",
+    itemSelector: ".masonry-item",
     masonry: {
-      columnWidth: ".grid-sizer",
-      gutter: ".grid-gutter"
+      columnWidth: ".masonry-sizer",
+      gutter: ".masonry-gutter"
     },
     percentPosition: true
   });
