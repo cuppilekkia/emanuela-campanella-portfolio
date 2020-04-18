@@ -35,6 +35,15 @@ const pages = {
           ]
         },
         {
+          label: "Quote",
+          name: "quote",
+          widget: "object",
+          fields: [
+            { label: "Quote", name: "quote", widget: "string" },
+            { label: "Cite", name: "cite", widget: "string" }
+          ]
+        },
+        {
           label: "Blurb",
           name: "blurb",
           widget: "object",
@@ -56,7 +65,7 @@ const pages = {
                 }
               }
             },
-            { label: "Heading", name: "heading", widget: "markdown" },
+            { label: "Heading", name: "heading", widget: "string" },
             { label: "Text", name: "text", widget: "markdown" }
           ]
         }

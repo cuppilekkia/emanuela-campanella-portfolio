@@ -14,6 +14,7 @@ const config = {
   public_folder: "img",
   media_library: {
     name: "cloudinary",
+    // output_filename_only: true,
     config: {
       // These are not sensitive ;)
       cloud_name: "cuppilekkia",

@@ -20,6 +20,10 @@ disableKinds = ["RSS", "taxonomyTerm"]
   instagram = "emanuelacampanella_photography"
   facebook = "emanuelacampanellaphotography"
   linkedin = "emanuela-campanella"
+
+[params.cloudinary]
+  baseUrl = "https://res.cloudinary.com/cuppilekkia"
+  resource = "/image/upload"
   
 [permalinks]
   categories = "/:title/"

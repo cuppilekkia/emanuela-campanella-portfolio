@@ -21,12 +21,7 @@ h3 {
 }
 
 blockquote {
-  @apply text-xs uppercase pt-8 flex tracking-widest;
-}
-
-blockquote:before {
-  content: '\2212';
-  @apply pr-2 relative;
+  @apply font-display text-lg text-center uppercase tracking-widest;
 }
 
 /* Custom container */
@@ -72,7 +67,7 @@ a:hover {
 
 /* Image utility */
 .fill {
-  @apply overflow-hidden flex justify-center items-center;
+  @apply overflow-hidden;
 
   img {
     @apply min-h-full min-w-full object-cover;
