@@ -11,6 +11,9 @@ slides:
   - caption: advertising
     src: >-
       https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557097/slides/opzione2_preferisco-l_altra_v8jh5l.jpg
+quote:
+  quote: Photography is the story I fail to put into words
+  cite: Mario Rossi
 blurb:
   image: >-
     https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_1000/v1580563948/portfolio/lost%20in%20dreams/IMG_9987_xnwqvk.jpg
