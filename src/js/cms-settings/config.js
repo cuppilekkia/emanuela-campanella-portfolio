@@ -10,11 +10,12 @@ const config = {
     branch: "development"
   },
   // Folder where user uploaded files should go
-  media_folder: "site/static/img",
-  public_folder: "img",
+  // media_folder: "site/static/img",
+  // public_folder: "img",
   media_library: {
     name: "cloudinary",
     // output_filename_only: true,
+    multiple: false,
     config: {
       // These are not sensitive ;)
       cloud_name: "cuppilekkia",
