@@ -30,16 +30,18 @@ function filterHandleClick(slug, filters) {
 const portfolioGrid = document.querySelector(".js-masonry");
 const portfolioFilters = document.querySelectorAll(".js-masonry-filter");
 
-imagesLoaded("#container", () => {
-  if (portfolioGrid) {
-    initPortfolioIso(portfolioGrid);
-  }
-  if (portfolioFilters && portfolioFilters.length > 0) {
-    portfolioFilters.forEach(filter => {
-      const slug = filter.dataset.filter;
-      filter.addEventListener("click", () =>
-        filterHandleClick(slug, portfolioFilters)
-      );
-    });
-  }
+document.addEventListener("DOMContentLoaded", () => {
+  imagesLoaded("#container", () => {
+    if (portfolioGrid) {
+      initPortfolioIso(portfolioGrid);
+    }
+    if (portfolioFilters && portfolioFilters.length > 0) {
+      portfolioFilters.forEach(filter => {
+        const slug = filter.dataset.filter;
+        filter.addEventListener("click", () =>
+          filterHandleClick(slug, portfolioFilters)
+        );
+      });
+    }
+  });
 });

@@ -6,6 +6,7 @@ window.lazySizesConfig.rias = window.lazySizesConfig.rias || {};
 window.lazySizesConfig.rias.widths = [320, 480, 640, 960];
 document.addEventListener("lazyriasmodifyoptions", event => {
   // event.detail referes the placeholders/options and event.target the corresponding element
+  // eslint-disable-next-line no-param-reassign
   event.detail.quality = (window.devicePixelRatio || 1) > 1.9 ? 50 : 80;
 });
 

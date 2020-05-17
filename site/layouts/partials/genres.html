@@ -8,32 +8,32 @@
 		{{ $cat3 := index $cats 2 }}
 		{{ $cat4 := index $cats 3 }}
 
-		<div class="mb-8 sm:m-0 fill col-span-9 row-span-5 col-start-1 row-start-1 relative">
+		<div class="mb-8 sm:mb-0 fill col-span-9 row-span-5 col-start-1 row-start-1 relative">
 			<img src="{{ $cat1.Params.image }}" alt="{{ $cat1.Params.title }}">
 			<a href="{{ $cat1.Params.slug }}" class="text-xs">
 				{{ partial "overlay-title" (dict "title" $cat1.Params.title) }}
 			</a>
 		</div>
-		<div class="mb-8 sm:m-0 fill col-span-5 row-span-2 col-start-10 row-start-1 relative">
+		<div class="mb-8 sm:mb-0 fill col-span-5 row-span-2 col-start-10 row-start-1 relative">
 			<img src="{{ $cat3.Params.image }}" alt="{{ $cat3.Params.title }}">
 			<a href="{{ $cat3.Params.slug }}" class="text-xs">
 				{{ partial "overlay-title" (dict "title" $cat3.Params.title) }}
 			</a>
 		</div>
-		<div class="mb-8 sm:m-0 fill col-span-5 row-span-3 col-start-10 row-start-3 relative">
+		<div class="mb-8 sm:mb-0 fill col-span-5 row-span-3 col-start-10 row-start-3 relative">
 			<img src="{{ $cat2.Params.image }}" alt="{{ $cat2.Params.title }}">
 			<a href="{{ $cat2.Params.slug }}" class="text-xs">
 				{{ partial "overlay-title" (dict "title" $cat2.Params.title) }}
 			</a>
 		</div>
 
-		<div class="mb-8 sm:m-0 fill col-span-5 row-span-3 col-start-15 row-start-1 relative">
+		<div class="mb-8 sm:mb-0 fill col-span-5 row-span-3 col-start-15 row-start-1 relative">
 			<img src="{{ $cat4.Params.image }}" alt="{{ $cat4.Params.title }}">
 			<a href="{{ $cat4.Params.slug }}" class="text-xs">
 				{{ partial "overlay-title" (dict "title" $cat4.Params.title) }}
 			</a>
 		</div>
-		<div class="mb-8 sm:m-0 fill col-span-5 row-span-2 col-start-15 row-start-4 relative">
+		<div class="mb-8 sm:mb-0 fill col-span-5 row-span-2 col-start-15 row-start-4 relative">
 			<img src="{{ $cat2.Params.image }}" alt="{{ $cat2.Params.title }}">
 			<a href="{{ $cat2.Params.slug }}" class="text-xs">
 				{{ partial "overlay-title" (dict "title" $cat2.Params.title) }}
