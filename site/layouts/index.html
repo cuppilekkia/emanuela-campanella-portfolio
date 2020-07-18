@@ -2,12 +2,12 @@
 
 {{ partial "slider" (dict "images" .Params.slides) }}
 
-{{ partial "short-text" .Params.blurb }}
+{{ partial "quote" .Params.quote }}
 
-{{ partial "2-up" .Params }}
+{{ partial "genres" . }}
 
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
+{{ partial "image-and-text" .Params.blurb }}
 
-{{ partial "blog" . }}
+{{ partial "instagram" . }}
 
 {{ end }}

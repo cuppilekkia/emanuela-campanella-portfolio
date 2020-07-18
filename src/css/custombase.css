@@ -1,7 +1,4 @@
-a:hover {
-  @apply text-gold;
-}
-
+/* Basic Heading sizes */
 h1,
 h2,
 h3,
@@ -16,9 +13,63 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-5xl;
 }
 
 h3 {
-  @apply text-2xl;
+  @apply text-4xl;
+}
+
+blockquote {
+  @apply font-display text-lg text-center uppercase tracking-widest;
+}
+
+/* Custom container */
+.base-container {
+  @apply px-4 m-auto max-w-screen-xl;
+}
+
+@screen sm {
+  .base-container {
+    @apply px-6;
+  }
+}
+
+@screen md {
+  .base-container {
+    @apply px-12;
+  }
+}
+
+/* Custom Transitions */
+.transition-fast {
+  transition: .1s ease-in-out;
+}
+.transition-normal {
+  transition: .3s ease-in-out;
+}
+.transition-slow {
+  transition: .5s ease-in-out;
+}
+
+/* Links */
+a {
+  @apply transition-normal text-black;
+}
+
+a:hover {
+  @apply text-gold;
+}
+
+.active {
+  @apply text-gold;
+}
+
+/* Image utility */
+.fill {
+  @apply overflow-hidden;
+
+  img {
+    @apply min-h-full min-w-full object-cover;
+  }
 }

@@ -1,0 +1,8 @@
+<div class="w-full py-8 md:pb-24 md:pt-16 text-center">
+  <h2 class="mb-8 text-xl uppercase tracking-widest italic">Lets be friends on Instagram</h2>
+  <a href="https://instagram.com/{{ .Site.Params.social.instagram }}" target="_blank" class="text-sm italic">
+    @{{ .Site.Params.social.instagram }}
+  </a>
+
+  {{ partial "image-grid" (dict "images" .Site.Data.instagram) }}
+</div>

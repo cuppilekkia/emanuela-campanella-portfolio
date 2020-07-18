@@ -1,0 +1,8 @@
+.styled-content {
+  @apply font-display text-2xl;
+
+  h1, 
+  h2 {
+    @apply font-body uppercase text-base font-bold mb-8 text-gray-800 tracking-widest;
+  }
+}

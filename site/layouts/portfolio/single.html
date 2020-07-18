@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="base-container lg:flex">
+  <div class="lg:w-2/5 lg:pr-24 mb-12 styled-content">
+    {{ .Content }}
+  </div>
+  
+  <div class="lg:w-3/5">
+    {{ if eq (index .Params "album") "single" }}
+    <!-- Portfolio Single -->
+    <div>
+      {{ $item := index .Params.images 0 }}
+      {{ partial "portfolio/image-lightbox" $item }}
+    </div>
+    {{ else }}
+    <!-- Portfolio Album -->
+    <div class="js-masonry">
+      <div class="masonry-gutter"></div>
+      <div class="masonry-sizer"></div>
+      {{ range .Params.images }}
+        {{ partial "portfolio/image-lightbox" . }}
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

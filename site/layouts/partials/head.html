@@ -1,20 +1,33 @@
 <head>
-
-  <title>{{ .Title }} | {{ $.Site.Title }}</title>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-  </style>
-
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+	<title>{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}</title>
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<base
+		href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+
+	{{ if ne "production" (getenv "CONTEXT") }}
+	<meta name="X-HUGO-PAGE-KIND" content="{{.Kind}}" />
+	<meta name="X-HUGO-PAGE-TYPE" content="{{.Type}}" />
+	{{ end }}
+
+	<meta name="description"
+		content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+	{{ if and (eq .Kind "taxonomy") (eq .Type "categorie")}}
+	<meta name="robots" content="noindex, follow" />
+	{{ else }}
+	<meta name="robots" content="index, follow" />
+	{{ end }}
+
+	<!-- Styles -->
+	<style>@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');</style>
+	{{ $stylesheet := .Site.Data.webpack.main }}
+	{{ with $stylesheet.css }}
+	<link href="{{ relURL . }}" rel="stylesheet">
+	{{ end }}
+	<link rel="stylesheet" href="https://cdn.lineicons.com/1.0.1/LineIcons.min.css">
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -24,13 +37,25 @@
 	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
 	<meta name="theme-color" content="#fff">
 
-	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="{{ .Site.Title }}">
-	<meta property="og:url" content="/">
-	<meta property="og:image" content="/img/og-image.jpg">
+	<!-- OG data -->
+	{{ partial "seo_schema" . }}
 
-  {{ if .IsHome }}
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {{ end }}
+	<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+	<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+	<meta property="og:title" content="{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}">
+	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+	<meta property="og:url" content="{{ .Permalink }}" />
+	<meta property="og:site_name" content="{{ .Site.Title }}" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+	<meta name="twitter:title" content="{{ title .Title | default $.Site.Title }}{{ if not .IsHome }} | {{ $.Site.Params.shorttitle }}{{ end }}" />
+	<meta name="twitter:site" content="{{ .Site.Params.author }}" />
+	<meta name="twitter:creator" content="{{ .Site.Params.author }}" />
+
+	<!-- Scripts -->
+	{{ if .IsHome }}
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{{ end }}
 </head>

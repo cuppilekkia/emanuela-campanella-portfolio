@@ -1,6 +1,16 @@
+{{ $array := (split (index (split .Params.mainimage ",") (sub (len (split .Params.mainimage ",")) 1)) "/") }}
+{{ $imageFilename := delimit ($array | complement (slice (index $array 0))) "/" }}
+
 <a href="{{ .RelPermalink }}" class="">
-	<h2 class="">{{ .Title }}</h2>
-	<p class="">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-	<p class="">{{ .Description }}</p>
-	<p class="">Read more →</p>
+	<img data-srcset="{{ $.Site.Params.cloudinary.baseUrl }}{{ $.Site.Params.cloudinary.resource }}/c_fill,f_auto,q_{quality},w_{width}/{{ $imageFilename }}"
+		src="{{ $.Site.Params.cloudinary.baseUrl }}{{ $.Site.Params.cloudinary.resource }}/c_fill,f_auto,q_10,w_300/{{ $imageFilename }}"
+		data-sizes="auto"
+		data-widths="[180, 360, 540, 720, 1080]"
+		alt="{{ $.Site.Params.Author }} {{ .Title }}" 
+		class="lazyload w-full mb-4 lg:mb-0">
+	<div class="lg:absolute top-0 left-0 w-full bottom-0 lg:opacity-0 lg:hover:opacity-75 lg:bg-gray-800 lg:transition-normal lg:text-white flex flex-col lg:justify-center lg:items-center">
+		<h2 class="text-2xl tracking-wide mb-2">{{ .Title }}</h2>
+		<hr class="w-1/4 bg-white mb-6 hidden lg:block">
+		<p class="uppercase tracking-widest hidden lg:block">Watch <i class="lni-arrow-right align-text-bottom"></i></p>
+	</div>
 </a>

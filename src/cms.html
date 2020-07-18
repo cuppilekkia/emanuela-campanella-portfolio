@@ -9,6 +9,9 @@
   <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+  <script>
+    window.CMS_MANUAL_INIT = true;
+  </script>
   <script src="<%= htmlWebpackPlugin.files.chunks.cms.entry %>"></script>
 </body>
 </html>

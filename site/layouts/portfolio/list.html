@@ -1,14 +1,23 @@
 {{ define "main" }}
 
-<div class="">
-  <ul class="">
-      {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <div class="">
-            {{ .Render "li"}}
-          </div>
-      {{ end }}
-  </ul>
-  {{ partial "pagination" . }}
+<div class="mb-4 overflow-hidden base-container">
+  <div class="flex flex-wrap justify-center mb-8 w-full">
+    <button class="hover:text-gold px-2 uppercase js-masonry-filter active" data-filter="all">All</button>
+    {{ range (where .Site.RegularPages "Type" "categorie") }}
+      <button class="hover:text-gold px-2 uppercase js-masonry-filter" data-filter="{{ .Slug }}">{{ .Title }}</button>
+    {{ end }}
+  </div>
+
+  <div class="js-masonry ">
+    <div class="masonry-gutter"></div>
+    <div class="masonry-sizer"></div>
+    {{ range .Pages.ByDate.Reverse }}
+        <div class="masonry-item overflow-hidden {{ .Params.categories }}">
+          {{ .Render "li" }}
+        </div>
+    {{ end }}
+  </div>
+  
 </div>
 
 {{end}}

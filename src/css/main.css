@@ -2,8 +2,15 @@
 
 @import 'tailwindcss/base';
 @import 'custombase';
+@import 'slider';
+@import 'masonry';
+@import 'genres';
+@import 'image-and-text';
 @import 'tailwindcss/components';
 
 /* purgecss end ignore */
 
 @import 'tailwindcss/utilities';
+
+/* pages css */
+@import 'portfolio';

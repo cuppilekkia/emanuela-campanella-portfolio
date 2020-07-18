@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="base-container">
+  <div class="lg:flex mb-16">
+    <div class="lg:w-3/5 mb-16 lg:pr-24 styled-content">
+      {{ .Content }}
+    </div>
+  
+    <div class="lg:w-2/5">
+      <img src="{{ .Params.image }}" alt="" class="w-full">
+    </div>
+  </div>
+
+  <!-- <div class="">
+		{{ range .Params.contact_entries }}
+		<div>
+			<h4 class="">{{ .heading }}</h4>
+			<p>{{ .text }}</p>
+		</div>
+		{{ end }}
+  </div> -->
+  <div class="mb-16">
+    {{ partial "contact-form" . }}
+  </div>
+
+</div>
+
+{{ end }}

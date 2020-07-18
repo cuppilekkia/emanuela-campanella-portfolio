@@ -1,47 +1,42 @@
 ---
-title: Great coffee with a conscience
+title: Emanuela Campanella Advertising photographer
 subtitle: Support sustainable farming while enjoying a cup
 slides:
-  - caption: caption uva
-    src: /img/about-shade-grown.jpg
-  - caption: caption caffè
-    src: /img/blog-index.jpg
-  - caption: caption sourcing
-    src: /img/about-direct-sourcing.jpg
+  - caption: fashion dark model
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/copertina-face-loiudice_fbgrs7.jpg
+  - caption: still life food
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557096/slides/shopping_1200x628_mogduv.jpg
+  - caption: advertising
+    src: >-
+      https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_2000/v1580557097/slides/opzione2_preferisco-l_altra_v8jh5l.jpg
+quote:
+  quote: Photography is the story I fail to put into words
+  cite: Mario Rossi
 blurb:
-  heading: Why Kaldi?
+  image: >-
+    https://res.cloudinary.com/cuppilekkia/image/upload/c_fill,f_auto,q_auto,w_1000/v1580563948/portfolio/lost%20in%20dreams/IMG_9987_xnwqvk.jpg
+  heading: 'Look, I''m not an intellectual – I just take pictures.'
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-intro:
-  heading: What we offer
-  text: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
-products:
-  - image: img/illustrations-coffee.svg
-    text: >-
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
-  - image: /img/illustrations-coffee-gear.svg
-    text: >-
-      We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
-values:
-  heading: Our values
-  text: >-
-    Coffee is an amazing part of human culture but it has a dark side too – one
-    of colonialism and mindless abuse of natural resources and human lives. We
-    want to turn this around and return the coffee trade to the drink’s
-    exhilarating, empowering and unifying nature.
----
+    Natasha Yankelevich is the photographer and designer from Moscow.\
 
+    She was born in November 1, 1988. In 2005 she entered the Russian Tourism
+    and Service University deciding to learn graphic design. After ending the
+    university she worked as the graphic and web designer. Also she started to
+    take part in creative shootings as a model. She was inspired by the process
+    and the photo industry, so decided to make captures by herself.\
+
+    \
+
+    Since that time Natasha took part in numerous projects - сreative and
+    fashion shootings, magazine's publications, exhibitions. Natasha’s first
+    exhibition took place in Moscow gallery “Zdes na Taganke”\
+
+    \
+
+    The main thing in her photography is to get a real emotion, that can be
+    understandable for everyone. All of her subjects are about sensuality in
+    each of us. It is the little stories about thoughts, senses and invisible
+    miracles, on way to yourself.
+---

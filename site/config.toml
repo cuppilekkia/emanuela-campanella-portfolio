@@ -1,15 +1,31 @@
 baseurl = "/"
 languageCode = "en-gb"
 footnoteReturnLinkContents = "↩"
+enableRobotsTXT = "true"
+canonifyURLs = "true"
 
-title = "Emanuela Campanella Fashion photographer"
+title = "Emanuela Campanella Advertising photographer"
 
 disableKinds = ["RSS", "taxonomyTerm"]
 
 [params]
-  AuthorName = "Emanuela Campanella"
-  Subtitle = "Fashion and Editorial photographer"
+  author = "Emanuela Campanella"
+  subtitle = "Fashion and Editorial photographer"
+  shorttitle = "Emanuela Campanella Photographer"
+  description = "descrizione"
+  siteDescription = "descrizione sito"
+  images = ["site-feature-image.jpg"]
+
+[params.social]
+  instagram = "emanuelacampanella_photography"
+  facebook = "emanuelacampanellaphotography"
+  linkedin = "emanuela-campanella"
+
+[params.cloudinary]
+  baseUrl = "https://res.cloudinary.com/cuppilekkia"
+  resource = "/image/upload"
   
 [permalinks]
   categories = "/:title/"
   portfolio = "/:slug/"
+  post = "/:section/:slug/"
